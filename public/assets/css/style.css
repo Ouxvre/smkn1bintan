@@ -4,123 +4,273 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    /* outline: 1px solid rgb(0, 38, 255); */
+  /* outline: 1px solid rgb(0, 38, 255); */
+  scrollbar-width: none;
 }
 
 body {
+  /* overflow: hidden; */
   font-family: "Outfit", sans-serif;
-  overflow-x: hidden;
 }
 
+
 /* Splash screen */
-    #splash {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #303F63;
-      color: white;
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      transform: translateY(0);
-      transition: transform 0.8s ease;
-    }
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #303f63;
+  color: white;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 0.8s ease;
+}
 
-    #splash.hide {
-      transform: translateY(-100%);
-    }
+#splash.hide {
+  transform: translateY(-100%);
+}
 
-    .splash-content {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.splash-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    #splash h1 {
-      font-size: 6rem;
-      font-weight: bold;
-    }
+#splash h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
 
-    .arrow-container {
-      padding-bottom: 30px;
-    }
+.arrow-container {
+  padding-bottom: 30px;
+}
 
-    .arrow-icon {
-      font-size: 3rem;
-      cursor: pointer;
-      color: white;
-    }
+.arrow-icon {
+  font-size: 3rem;
+  cursor: pointer;
+  color: white;
+}
 
-     /* Navbar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #2c3e50;
-      padding: 10px 70px;
-      color: white;
-      flex-wrap: wrap;
-    }
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 10px 70px;
+  color: white;
+  flex-wrap: wrap;
+}
 
-    .brand {
-      display: flex;
-      align-items: center;
-    }
+.brand {
+  display: flex;
+  align-items: center;
+}
 
-    .brand img {
-      height: 55px;
-      margin-right: 16px;
-    }
+.brand img {
+  height: 55px;
+  margin-right: 16px;
+}
 
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-    .brand-text .title {
-      font-size: 1rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
+.brand-text .title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-    .brand-text .subtitle {
-      font-size: 0.9rem;
-      font-weight: 200;
-      margin-left: 12px;
-    }
+.brand-text .subtitle {
+  font-size: 0.9rem;
+  font-weight: 200;
+  margin-left: 12px;
+}
 
-    .nav-links {
-      display: flex;
-      gap: 24px;
-    }
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
 
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
 
-    .nav-links a:hover {
-      color: #ffcc00;
-    }
+.nav-links a:hover {
+  color: #ffcc00;
+}
 
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-      .nav-links {
-        margin-top: 10px;
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
+  .nav-links {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* welcome  */
+.welcome {
+  background-image: url("../image/frontschool.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 620px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.text1 {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.text2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.text3 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* about */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24334a;
+  color: white;
+  padding: 60px 80px;
+}
+
+.about-left {
+  max-width: 50%;
+}
+
+.about-left h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-left p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+}
+
+.divider-line {
+  width: 1px;
+  background-color: white;
+  height: 200px;
+  margin: 0 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #24334a;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffcc00;
+  color: #24334a;
+}
+
+.about-right img {
+  width: 200px;
+  margin-left: 200px;
+}
+
+/* sambutan */
+
+.sambutan {
+  padding: 60px 80px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.sambutan h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.sambutan h2 span {
+  color: #0056ff;
+}
+
+.sambutan-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sambutan-img img {
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.sambutan-text {
+  width: 700px;
+  text-align: left;
+}
+
+.sambutan-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sambutan-text p span {
+  margin-left: 50px;
+}
+
+.sambutan-text p {
+  line-height: 1.6;
+  font-size: 20px;
+}
