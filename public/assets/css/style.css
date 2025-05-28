@@ -152,17 +152,38 @@ body {
 .text1 {
   font-size: 65px;
   font-weight: bold;
+  animation-delay: 0.5s;
 }
 
 .text2 {
   font-size: 55px;
   font-weight: bold;
+  animation-delay: 1.2s;
 }
 
 .text3 {
   font-size: 60px;
   font-weight: bold;
+  animation-delay: s;
 }
+
+/* Efek muncul perlahan */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text1, .text2, .text3 {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
 
 /* about */
 
@@ -220,8 +241,8 @@ body {
 }
 
 .about-right img {
-  width: 200px;
-  margin-left: 200px;
+  width: 240px;
+  margin-left: 180px;
 }
 
 /* sambutan */
@@ -258,6 +279,7 @@ body {
 .sambutan-text {
   width: 700px;
   text-align: left;
+  margin-right: 100px;
 }
 
 .sambutan-text h3 {
@@ -271,6 +293,105 @@ body {
 }
 
 .sambutan-text p {
-  line-height: 1.6;
+  line-height: 1.4;
   font-size: 20px;
+}
+
+/* fitur section */
+
+.fitur-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
+.fitur-section h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.fitur-section p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 45px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fitur-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.fitur-box {
+  width: 300px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.fitur-icon {
+  width: 60px;
+  height: 60px;
+  background-color: royalblue;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.fitur-content {
+  padding-top: 10px; 
+}
+
+.fitur-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.fitur-content p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* aktif-section */
+
+.stats-section {
+  background-color: #2d3b61; /* Warna biru gelap seperti di desain */
+  padding: 30px 0;
+  color: white;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.stat-box h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #4c8aff; /* Biru terang untuk angka */
+}
+
+.stat-box p {
+  font-size: 1.2em;
+  margin-top: 5px;
 }
