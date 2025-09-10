@@ -454,13 +454,59 @@
     </div>
 
     <!-- news and event -->
+   <section class="section-news">
+    <h2>News & Events</h2>
+    <p>Berita & Kegiatan Terbaru SMKN 1 Bintan Utara: Update Informasi, Prestasi, dan Aktivitas Sekolah yang Inspiratif</p>
+    
+    <div class="news-container">
+      <!-- Card 1 -->
+      <div class="news-card">
+        <div class="news-img">foto smk</div>
+        <div class="news-content">
+          <div class="news-title">
+            Prestasi Membanggakan, 9 Alumni SMKN 1 Bintan Utara Diterima di ITB Lewat SNBP
+          </div>
+          <div class="news-date">
+            <i class="fa-regular fa-calendar"></i> 09 Januari 2025
+          </div>
+        </div>
+      </div>
 
-    <div class="news-event">
-      <h3></h3>
-      <p></p>
+      <!-- Card 2 -->
+      <div class="news-card">
+        <div class="news-img">foto mangrove</div>
+        <div class="news-content">
+          <div class="news-title">
+            Kedatangan Tim Go-Green, Sosialisasi dan Aksi Tanam Mangrove
+          </div>
+          <div class="news-date">
+            <i class="fa-regular fa-calendar"></i> 09 Januari 2025
+          </div>
+        </div>
+      </div>
 
-
+      <!-- Card 3 -->
+      <div class="news-card">
+        <div class="news-img">foto pesta rakyat</div>
+        <div class="news-content">
+          <div class="news-title">
+            Acara Pesta Rakyat di SMKN 1 Bintan Utara Sukses Digelar dengan Penuh Antusiasme
+          </div>
+          <div class="news-date">
+            <i class="fa-regular fa-calendar"></i> 09 Januari 2025
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+      <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+    </div>
+  </section>
+
+  <?php include 'include/footer.php'?>
 </body>
 
 <script src="js/script.js"></script>
