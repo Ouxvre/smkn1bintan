@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: "Outfit", sans-serif;
+    scrollbar-width: none;
   }
 
   /* Navbar */
@@ -19,8 +20,12 @@
     color: white;
     flex-wrap: wrap;
     width: 100%;
-    /* pastikan full */
     box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
 
   .brand {
@@ -98,3 +103,10 @@
     <a href="#">PPDBB</a>
   </div>
 </div>
+
+<script>
+  window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
