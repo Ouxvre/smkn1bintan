@@ -1,87 +1,89 @@
 <style>
-/* Reset */
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: "Outfit", sans-serif;
-}
+  /* Reset */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+  }
 
-/* Footer */
-.footer {
-  background-color: #2c3e50; /* warna biru tua */
-  color: white;
-  padding: 25px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-left {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.footer-left img {
-  height: 110px;
-}
-
-.footer-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-text .school-name {
-  font-weight: bold;
-  font-size: 1.3rem;
-  line-height : 1.9;
-}
-
-.footer-text .school-subtitle {
-  font-weight: 300;
-  font-size: 0.9rem;
-}
-
-.footer-address {
-  border-left: 1px solid white;
-  padding-left: 20px;
-  font-size: 0.90rem;
-  line-height: 1.8;
-}
-
-.footer-right {
-  display: flex;
-  gap: 15px;
-}
-
-.footer-right a img {
-  height: 32px;
-  width: 32px;
-  transition: transform 0.3s;
-}
-
-.footer-right a img:hover {
-  transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
+  /* Footer */
   .footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    background-color: #2c3e50;
+    /* warna biru tua */
+    color: white;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .footer-left img {
+    height: 110px;
+  }
+
+  .footer-text {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+  }
+
+  .footer-text .school-name {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.9;
+  }
+
+  .footer-text .school-subtitle {
+    font-weight: 300;
+    font-size: 0.9rem;
   }
 
   .footer-address {
-    border-left: none;
-    padding-left: 0;
+    border-left: 1px solid white;
+    padding-left: 20px;
+    font-size: 0.90rem;
+    line-height: 1.8;
   }
-}
+
+  .footer-right {
+    display: flex;
+    gap: 15px;
+  }
+
+  .footer-right a img {
+    height: 32px;
+    width: 32px;
+    transition: transform 0.3s;
+  }
+
+  .footer-right a img:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .footer-left {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .footer-address {
+      border-left: none;
+      padding-left: 0;
+    }
+  }
 </style>
 
 <div class="footer">
