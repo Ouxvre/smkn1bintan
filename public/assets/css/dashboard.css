@@ -1,0 +1,83 @@
+/* ===== General ===== */
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  height: 100vh;
+  background: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 250px;
+}
+
+.sidebar h4 {
+  font-weight: bold;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Content ===== */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+/* ===== Card ===== */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card i {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+/* ===== Statistik Cards ===== */
+.bg-primary, .bg-success, .bg-warning, .bg-danger {
+  border-radius: 15px !important;
+}
+
+/* ===== Recent Activity ===== */
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* ===== Shortcut Cards ===== */
+.card.text-center {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card.text-center:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}

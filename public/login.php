@@ -127,7 +127,6 @@
 </head>
 
 <body>
-    <?php include './include/navbar.php'; ?>
 
     <div class="login-wrapper">
         <div class="container">
@@ -158,7 +157,6 @@
         </div>
     </div>
 
-    <?php include './include/footer.php'; ?>
 </body>
 
 </html>
