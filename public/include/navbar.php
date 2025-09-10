@@ -90,7 +90,7 @@
     </div>
   </div>
   <div class="nav-links">
-    <a href="#">HOME</a>
+    <a href="index.php">HOME</a>
     <a href="#">PROFIL</a>
     <a href="#">JURUSAN</a>
     <a href="#">INFORMASI</a>
