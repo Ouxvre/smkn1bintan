@@ -254,8 +254,9 @@ body {
 }
 
 .sambutan h2 {
-  font-size: 24px;
+  font-size: 45px;
   margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 .sambutan h2 span {
@@ -296,6 +297,60 @@ body {
   line-height: 1.4;
   font-size: 20px;
 }
+
+/* 3bagan */
+    .bagan {
+      display: flex;
+      justify-content: center;
+      gap: 160px;
+      margin: 50px 0;
+      flex-wrap: wrap;
+    }
+
+    .card-bagan {
+      background-color: #223366;
+      color: white;
+      width: 280px;
+      height: 200px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .card-bagan:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-bagan i {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .card-bagan h3 {
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background-color: white;
+      color: #223366;
+      border: none;
+      padding: 6px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 12px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
 
 /* fitur section */
 
