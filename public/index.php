@@ -79,7 +79,7 @@
 
         <div class="sambutan-content">
             <div class="sambutan-img" data-aos="fade-right">
-                <img src="assets/image/kepalasekolah.png" alt="Kepala Sekolah" />
+                <img src="assets/image/kepsek.jpg" alt="Kepala Sekolah" />
             </div>
             <div class="sambutan-text" data-aos="fade-left">
                 <h3>Broery Jandriano Pratama M.Pd</h3>
@@ -216,7 +216,7 @@
         <!-- list item -->
         <div class="list">
             <div class="item">
-                <img src="assets/image/img1.jpg" />
+                <img src="assets/image/jurusan/lab_rpl.jpg" />
                 <div class="content">
                     <!-- <div class="author">RPL</div> -->
                     <div class="title">Rekayasa Perangkat Lunak</div>
@@ -232,13 +232,12 @@
                     </div>
                     <div class="buttons">
                         <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="assets/image/img2.jpg" />
+                <img src="assets/image/jurusan/lab_tkj.jpg" />
                 <div class="content">
                     <!-- <div class="author">TJKT</div> -->
                     <div class="title">Teknik jaringan komputer & Telekomunikasi</div>
@@ -253,13 +252,12 @@
                     </div>
                     <div class="buttons">
                         <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="assets/image/img3.jpg" />
+                <img src="assets/image/jurusan/lab_titl.jpg" />
                 <div class="content">
                     <!-- <div class="author">TITL</div> -->
                     <div class="title">Teknik Instalasi Tenaga Listrik</div>
@@ -274,13 +272,12 @@
                     </div>
                     <div class="buttons">
                         <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="assets/image/img4.jpg" />
+                <img src="assets/image/jurusan/lab_tei.jpg" />
                 <div class="content">
                     <!-- <div class="author">TEI</div> -->
                     <div class="title">Teknik Elektronika Industri</div>
@@ -295,13 +292,12 @@
                     </div>
                     <div class="buttons">
                         <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="assets/image/img1.jpg" />
+                <img src="assets/image/jurusan/lab_ph.jpg" />
                 <div class="content">
                     <!-- <div class="author">PH</div> -->
                     <div class="title">Perhotelan</div>
@@ -316,13 +312,12 @@
                     </div>
                     <div class="buttons">
                         <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="assets/image/img1.jpg" />
+                <img src="assets/image/jurusan/lab_tp.jpg" />
                 <div class="content">
                     <!-- <div class="author">TP</div> -->
                     <div class="title">Teknik Pengelasan</div>
@@ -337,13 +332,12 @@
                     </div>
                     <div class="buttons">
                         <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="assets/image/img1.jpg" />
+                <img src="assets/image/jurusan/lab_tkdp.jpg" />
                 <div class="content">
                     <!-- <div class="author">TKDP</div> -->
                     <div class="title">Teknik Konstruksi Dan Pembangunan</div>
@@ -358,13 +352,12 @@
                     </div>
                     <div class="buttons">
                         <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="assets/image/img1.jpg" />
+                <img src="assets/image/jurusan/lab_tkr.jpg" />
                 <div class="content">
                     <!-- <div class="author">TKR</div> -->
                     <div class="title">Teknik Kendaraan Ringan</div>
@@ -379,7 +372,6 @@
                     </div>
                     <div class="buttons">
                         <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
@@ -391,56 +383,48 @@
                 <img src="assets/image/img1.jpg" />
                 <div class="content">
                     <div class="title">Rekayasa Perangkat Lunak</div>
-                    <div class="description">Description</div>
                 </div>
             </div>
             <div class="item">
                 <img src="assets/image/img2.jpg" />
                 <div class="content">
-                    <div class="title">Rekayasa Perangkat Lunak</div>
-                    <div class="description">Description</div>
+                    <div class="title">Teknik Jaringan komputer</div>
                 </div>
             </div>
             <div class="item">
                 <img src="assets/image/img3.jpg" />
                 <div class="content">
-                    <div class="title">Name Slider</div>
-                    <div class="description">Description</div>
+                    <div class="title">Teknik Instalasi Listrik</div>
                 </div>
             </div>
             <div class="item">
                 <img src="assets/image/img4.jpg" />
                 <div class="content">
-                    <div class="title">Name Slider</div>
-                    <div class="description">Description</div>
+                    <div class="title">Teknik Elektronika Industri</div>
                 </div>
             </div>
             <div class="item">
                 <img src="assets/image/img4.jpg" />
                 <div class="content">
-                    <div class="title">Name Slider</div>
-                    <div class="description">Description</div>
+                    <div class="title">Perhotelan</div>
                 </div>
             </div>
             <div class="item">
                 <img src="assets/image/img4.jpg" />
                 <div class="content">
-                    <div class="title">Name Slider</div>
-                    <div class="description">Description</div>
+                    <div class="title">Teknik Pengelasan</div>
                 </div>
             </div>
             <div class="item">
                 <img src="assets/image/img4.jpg" />
                 <div class="content">
-                    <div class="title">Name Slider</div>
-                    <div class="description">Description</div>
+                    <div class="title">Teknik Konstruksi Pembangunan</div>
                 </div>
             </div>
             <div class="item">
                 <img src="assets/image/img4.jpg" />
                 <div class="content">
-                    <div class="title">Name Slider</div>
-                    <div class="description">Description</div>
+                    <div class="title">Teknik Kendaraan Ringan</div>
                 </div>
             </div>
         </div>
@@ -456,95 +440,113 @@
         <div class="time"></div>
     </div>
 
-    <!-- berita dan artikel -->
-    <div class="berita">
-        <h2 class="section-title">Artikel & Berita Terbaru</h2>
+<!-- berita dan artikel -->
+<div class="berita">
+    <h2 class="section-title">Artikel & Berita Terbaru</h2>
 
-        <!-- Tabs -->
-        <ul class="tabs">
-            <li><button class="active" data-target="berita">Berita</button></li>
-            <li><button data-target="prestasi">Prestasi</button></li>
-            <li><button data-target="informasi">Informasi</button></li>
-        </ul>
+    <!-- Tabs -->
+    <ul class="tabs">
+        <li><button class="active" data-target="berita">Berita</button></li>
+        <li><button data-target="prestasi">Prestasi</button></li>
+        <li><button data-target="informasi">Informasi</button></li>
+    </ul>
 
-        <!-- Berita -->
-        <div id="berita" class="tab-content">
-            <div class="articles-container">
-                <?php
-        $result = $conn->query("SELECT * FROM berita WHERE kategori='berita' ORDER BY tanggal DESC LIMIT 6");
-        if ($result->num_rows > 0) {
-          while($row = $result->fetch_assoc()){
-            echo "
-            <div class='article-card'>
-              <div class='thumb'>
-                <img src='assets/image/{$row['gambar']}' alt='{$row['judul']}'>
-              </div>
-              <div class='content'>
-                <h5>{$row['judul']}</h5>
-                <div class='meta'>📅 {$row['tanggal']}</div>
-                <p>".substr(strip_tags($row['isi']),0,80)."...</p>
-              </div>
-            </div>";
-          }
-        } else {
-          echo "<p>Belum ada berita.</p>";
-        }
-        ?>
+    <!-- Berita -->
+    <div id="berita" class="tab-content">
+        <div class="slider-container">
+            <div class="articles-wrapper">
+                <div class="articles-container">
+                    <?php
+                    $result = $conn->query("SELECT * FROM berita WHERE kategori='berita' ORDER BY tanggal DESC LIMIT 12");
+                    if ($result->num_rows > 0) {
+                      while($row = $result->fetch_assoc()){
+                        echo "
+                        <div class='article-card'>
+                          <div class='thumb'>
+                            <img src='assets/image/{$row['gambar']}' alt='{$row['judul']}'>
+                          </div>
+                          <div class='content'>
+                            <h5>{$row['judul']}</h5>
+                            <div class='meta'>📅 {$row['tanggal']}</div>
+                            <p>".substr(strip_tags($row['isi']),0,80)."...</p>
+                          </div>
+                        </div>";
+                      }
+                    } else {
+                      echo "<p>Belum ada berita.</p>";
+                    }
+                    ?>
+                </div>
             </div>
-        </div>
-
-        <!-- Prestasi -->
-        <div id="prestasi" class="tab-content" style="display:none;">
-            <div class="articles-container">
-                <?php
-        $result = $conn->query("SELECT * FROM berita WHERE kategori='prestasi' ORDER BY tanggal DESC LIMIT 6");
-        if ($result->num_rows > 0) {
-          while($row = $result->fetch_assoc()){
-            echo "
-            <div class='article-card'>
-              <div class='thumb'>
-                <img src='assets/image/{$row['gambar']}' alt='{$row['judul']}'>
-              </div>
-              <div class='content'>
-                <h5>{$row['judul']}</h5>
-                <div class='meta'>📅 {$row['tanggal']}</div>
-                <p>".substr(strip_tags($row['isi']),0,80)."...</p>
-              </div>
-            </div>";
-          }
-        } else {
-          echo "<p>Belum ada prestasi.</p>";
-        }
-        ?>
-            </div>
-        </div>
-
-        <!-- Informasi -->
-        <div id="informasi" class="tab-content" style="display:none;">
-            <div class="articles-container">
-                <?php
-        $result = $conn->query("SELECT * FROM berita WHERE kategori='informasi' ORDER BY tanggal DESC LIMIT 6");
-        if ($result->num_rows > 0) {
-          while($row = $result->fetch_assoc()){
-            echo "
-            <div class='article-card'>
-              <div class='thumb'>
-                <img src='assets/image/{$row['gambar']}' alt='{$row['judul']}'>
-              </div>
-              <div class='content'>
-                <h5>{$row['judul']}</h5>
-                <div class='meta'>📅 {$row['tanggal']}</div>
-                <p>".substr(strip_tags($row['isi']),0,80)."...</p>
-              </div>
-            </div>";
-          }
-        } else {
-          echo "<p>Belum ada informasi.</p>";
-        }
-        ?>
-            </div>
+            <button class="slider-btn prev">❮</button>
+            <button class="slider-btn next">❯</button>
         </div>
     </div>
+
+    <!-- Prestasi -->
+    <div id="prestasi" class="tab-content" style="display:none;">
+        <div class="slider-container">
+            <div class="articles-wrapper">
+                <div class="articles-container">
+                    <?php
+                    $result = $conn->query("SELECT * FROM berita WHERE kategori='prestasi' ORDER BY tanggal DESC LIMIT 12");
+                    if ($result->num_rows > 0) {
+                      while($row = $result->fetch_assoc()){
+                        echo "
+                        <div class='article-card'>
+                          <div class='thumb'>
+                            <img src='assets/image/{$row['gambar']}' alt='{$row['judul']}'>
+                          </div>
+                          <div class='content'>
+                            <h5>{$row['judul']}</h5>
+                            <div class='meta'>📅 {$row['tanggal']}</div>
+                            <p>".substr(strip_tags($row['isi']),0,80)."...</p>
+                          </div>
+                        </div>";
+                      }
+                    } else {
+                      echo "<p>Belum ada prestasi.</p>";
+                    }
+                    ?>
+                </div>
+            </div>
+            <button class="slider-btn prev">❮</button>
+            <button class="slider-btn next">❯</button>
+        </div>
+    </div>
+
+    <!-- Informasi -->
+    <div id="informasi" class="tab-content" style="display:none;">
+        <div class="slider-container">
+            <div class="articles-wrapper">
+                <div class="articles-container">
+                    <?php
+                    $result = $conn->query("SELECT * FROM berita WHERE kategori='informasi' ORDER BY tanggal DESC LIMIT 12");
+                    if ($result->num_rows > 0) {
+                      while($row = $result->fetch_assoc()){
+                        echo "
+                        <div class='article-card'>
+                          <div class='thumb'>
+                            <img src='assets/image/{$row['gambar']}' alt='{$row['judul']}'>
+                          </div>
+                          <div class='content'>
+                            <h5>{$row['judul']}</h5>
+                            <div class='meta'>📅 {$row['tanggal']}</div>
+                            <p>".substr(strip_tags($row['isi']),0,80)."...</p>
+                          </div>
+                        </div>";
+                      }
+                    } else {
+                      echo "<p>Belum ada informasi.</p>";
+                    }
+                    ?>
+                </div>
+            </div>
+            <button class="slider-btn prev">❮</button>
+            <button class="slider-btn next">❯</button>
+        </div>
+    </div>
+</div>
 
     <?php include 'include/footer.php'?>
 </body>

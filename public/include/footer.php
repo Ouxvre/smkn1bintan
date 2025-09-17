@@ -1,5 +1,4 @@
 <style>
-  /* Reset */
   html,
   body {
     margin: 0;
@@ -7,10 +6,8 @@
     font-family: "Outfit", sans-serif;
   }
 
-  /* Footer */
   .footer {
-    background-color: #2d3b61;
-    /* warna biru tua */
+    background-color: #24334a;
     color: white;
     padding: 25px 40px;
     display: flex;

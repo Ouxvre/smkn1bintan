@@ -3,31 +3,23 @@ session_start();
 include("../config/config.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $conn->real_escape_string($_POST['username']);
+    $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = $_POST['password'];
 
-    $sql    = "SELECT * FROM users WHERE username = '$username' LIMIT 1";
-    $result = $conn->query($sql);
+    $sql = "SELECT * FROM users WHERE username='$username' LIMIT 1";
+    $result = mysqli_query($conn, $sql);
+    $user = mysqli_fetch_assoc($result);
 
-    if ($result && $result->num_rows > 0) {
-        $row = $result->fetch_assoc();
+    if ($user && password_verify($password, $user['password'])) {
+        // Simpan session
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['role'] = $user['role'];
 
-        if (password_verify($password, $row['password'])) {
-            $_SESSION['user_id']  = $row['id'];     
-            $_SESSION['username'] = $row['username'];
-            $_SESSION['role']     = $row['role'];
-
-            if ($row['role'] == "admin") {
-                header("Location: ../public/dashboard/dashboard.php");
-            } else {
-                header("Location: ../public/index.php");
-            }
-            exit;
-        } else {
-            echo "❌ Password salah!";
-        }
+        header("Location: ../public/dashboard.php");
+        exit;
     } else {
-        echo "❌ Username tidak ditemukan!";
+        echo "<script>alert('Login gagal! Username atau password salah.'); window.location='../public/login.html';</script>";
     }
 }
 ?>

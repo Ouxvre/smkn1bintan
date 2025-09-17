@@ -1,7 +1,4 @@
-<?php
-session_start();
-?>
-
+<?php include 'include/check_login.php'?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,14 +18,14 @@ session_start();
   <div class="sidebar">
     <h4 class="text-center mb-4">Admin Panel</h4>
     <a href="#"><i class="fa fa-home"></i> Dashboard</a>
-    <a href="#"><i class="fa fa-users"></i> Users</a>
+    <a href="../public/dashboard/users.php"><i class="fa fa-users"></i> Users</a>
     <a href="../public/dashboard/berita.php"><i class="fa fa-newspaper"></i> Berita</a>
     <a href="#"><i class="fa fa-bullhorn"></i> Pengumuman</a>
     <a href="#"><i class="fa fa-calendar"></i> Agenda</a>
     <a href="#"><i class="fa fa-images"></i> Galeri</a>
     <a href="#"><i class="fa fa-file-alt"></i> Dokumen</a>
     <a href="#"><i class="fa fa-cogs"></i> Settings</a>
-    <a href="logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
+    <a href="../auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
   </div>
 
   <!-- Content -->

@@ -63,6 +63,7 @@
     }
 
     input[type="text"],
+    input[type="email"],
     input[type="password"] {
         width: 100%;
         padding: 12px;
@@ -70,17 +71,6 @@
         border-radius: 8px;
         outline: none;
         font-size: 14px;
-    }
-
-    .forgot {
-        font-size: 12px;
-        color: #888;
-        margin-bottom: 20px;
-    }
-
-    .forgot a {
-        text-decoration: none;
-        color: inherit;
     }
 
     .login-btn {
@@ -132,20 +122,20 @@
             <div class="left">
 
                 <div class="welcome-text">
-                    <h1>Welcome</h1>
+                    <h1>Register</h1>
                     <p>"Big dreams start with small habits."</p>
                 </div>
 
-                <form action="../auth/login.php" method="POST">
+                <form action="../auth/register.php" method="POST">
+                    <div class="input-field">
+                        <input type="email" placeholder="email" name="email" required>
+                    </div>
                     <div class="input-field">
                         <input type="text" placeholder="username" name="username" required>
                     </div>
                     <div class="input-field">
                         <input type="password" placeholder="Password" name="password" required>
-                    </div>
-                    <div class="forgot">
-                        <a href="#">Forgot Password?</a>
-                    </div>
+                    </div><br>
                     <button class="login-btn">Login</button>
                 </form>
 
