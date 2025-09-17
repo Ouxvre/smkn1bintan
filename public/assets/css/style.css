@@ -304,7 +304,7 @@ body {
 .bagan {
   display: flex;
   justify-content: center;
-  gap: 160px;
+  gap: 50px;
   margin: 50px 0;
   flex-wrap: wrap;
 }
@@ -312,7 +312,7 @@ body {
 .card-bagan {
   background-color: #223366;
   color: white;
-  width: 280px;
+  width: 250px;
   height: 200px;
   border-radius: 10px;
   display: flex;
@@ -781,7 +781,7 @@ body {
 .slider-container {
   position: relative;
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto 80px auto;
 }
 
 .articles-wrapper {

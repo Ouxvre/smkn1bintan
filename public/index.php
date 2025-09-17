@@ -98,21 +98,27 @@
 
     <!-- 3 bagan -->
 
-    <div class="bagan" data-aos="fade-up">
+    <div class="bagan">
         <!-- Card 1 -->
-        <div class="card-bagan">
+        <div class="card-bagan" data-aos="fade-up">
             <i class="fas fa-user"></i>
             <h3>Guru & Staff</h3>
             <a href="guru-staff.html" class="btn">Load More</a>
         </div>
 
-        <div class="card-bagan">
+        <div class="card-bagan" data-aos="fade-up" data-aos-delay="200">
             <i class="fas fa-users"></i>
             <h3>Organisasi & Ekstrakulikuler</h3>
             <a href="organisasi.html" class="btn">Load More</a>
         </div>
 
-        <div class="card-bagan">
+        <div class="card-bagan" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-school"></i>
+            <h3>Biodata Sekolah</h3>
+            <a href="profil.php" class="btn">Load More</a>
+        </div>
+
+        <div class="card-bagan" data-aos="fade-up" data-aos-delay="600">
             <i class="fas fa-school"></i>
             <h3>Biodata Sekolah</h3>
             <a href="profil.php" class="btn">Load More</a>

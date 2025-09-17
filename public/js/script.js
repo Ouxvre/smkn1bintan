@@ -135,6 +135,27 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     const cardWidth = 280; // card + gap
     let visibleCards = 3;
+    let totalCards = container.children.length;
+
+    // Clone elemen untuk efek infinite
+    const firstClones = [];
+    const lastClones = [];
+
+    for (let i = 0; i < visibleCards; i++) {
+      const firstClone = container.children[i].cloneNode(true);
+      const lastClone = container.children[totalCards - 1 - i].cloneNode(true);
+      container.appendChild(firstClone);
+      container.insertBefore(lastClone, container.firstChild);
+      firstClones.push(firstClone);
+      lastClones.push(lastClone);
+    }
+
+    // update total cards setelah clone
+    totalCards = container.children.length;
+
+    // posisi awal geser ke depan (karena ada clone di awal)
+    currentIndex = visibleCards;
+    container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
 
     function updateVisibleCards() {
       if (window.innerWidth <= 640) {
@@ -146,32 +167,43 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    function updateSlider() {
+    function updateSlider(animate = true) {
+      if (!animate) {
+        container.style.transition = "none";
+      } else {
+        container.style.transition = "transform 0.5s ease";
+      }
       container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     }
 
     if (nextBtn) {
       nextBtn.addEventListener("click", () => {
-        updateVisibleCards();
-        if (currentIndex < container.children.length - visibleCards) {
-          currentIndex++;
-          updateSlider();
-        }
+        currentIndex++;
+        updateSlider();
       });
     }
 
     if (prevBtn) {
       prevBtn.addEventListener("click", () => {
-        if (currentIndex > 0) {
-          currentIndex--;
-          updateSlider();
-        }
+        currentIndex--;
+        updateSlider();
       });
     }
 
+    // trik looping
+    container.addEventListener("transitionend", () => {
+      if (currentIndex >= totalCards - visibleCards) {
+        currentIndex = visibleCards; // balik ke awal clone
+        updateSlider(false);
+      } else if (currentIndex <= 0) {
+        currentIndex = totalCards - visibleCards * 2; // balik ke akhir clone
+        updateSlider(false);
+      }
+    });
+
     window.addEventListener("resize", () => {
       updateVisibleCards();
-      updateSlider();
+      updateSlider(false);
     });
 
     updateVisibleCards();
