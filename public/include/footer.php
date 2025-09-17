@@ -9,7 +9,7 @@
 
   /* Footer */
   .footer {
-    background-color: #2c3e50;
+    background-color: #2d3b61;
     /* warna biru tua */
     color: white;
     padding: 25px 40px;
@@ -54,7 +54,7 @@
 
   .footer-right {
     display: flex;
-    gap: 15px;
+    gap: 30px;
   }
 
   .footer-right a img {
@@ -101,8 +101,8 @@
   </div>
 
   <div class="footer-right">
-    <a href="#"><img src="assets/image/youtube_logo.png" alt="YouTube"></a>
-    <a href="#"><img src="assets/image/facebook_logo.jpeg" alt="Facebook"></a>
+    <a href="#"><img src="assets/image/Youtube.png" alt="YouTube"></a>
+    <a href="#"><img src="assets/image/Facebook_icon.png" alt="Facebook"></a>
     <a href="#"><img src="assets/image/ig_logo.png" alt="Instagram"></a>
   </div>
 </div>

@@ -21,45 +21,14 @@
             <div>
                 <h3>SMK Negeri 1 Bintan Utara</h3>
                 <p>
-                    merupakan salah satu sekolah kejuruan unggulan di Kabupaten Bintan yang menyediakan 8 jurusan
-                    pilihan sesuai minat dan bakat siswa. Sekolah ini memiliki visi “Terwujudnya Insan Terampil,
-                    Kompetitif, Berjiwa Wirausaha, Berwawasan Nasionalisme dan Global Dilandasi Iman Taqwa.” Visi
-                    tersebut menjadi pedoman seluruh warga sekolah dalam mencetak lulusan yang siap bersaing di dunia
-                    kerja maupun melanjutkan pendidikan ke jenjang yang lebih tinggi.
+                    SMKN 1 Bintan Utara adalah sekolah kejuruan unggulan di Kabupaten Bintan yang berdiri sejak 7 April 2006. Sekolah ini memiliki visi mencetak insan terampil, kompetitif, berjiwa wirausaha, serta berwawasan nasional dan global berlandaskan iman takwa.
                 </p>
                 
                 <p>
-                    SMKN 1 Bintan Utara Merupakan Sekolah Kejuruan Berwawasan Mutu & Keunggulan di Era Teknologi &
-                    Informasi. Sekolah ini pertama kali berdiri di Kabupaten Bintan dan diresmikan pada tanggal 07 April
-                    2006 oleh Bupati Bintan, Bapak Ansar Ahmad, SE, MM. Sejak berdiri, SMKN 1 Bintan Utara konsisten
-                    menjadi pionir pendidikan kejuruan yang mengutamakan kualitas pembelajaran dan pengembangan karakter
-                    siswa.
+                    Berlokasi strategis di perbatasan Indonesia dengan Singapura dan Malaysia, sekolah ini berkembang menjadi pusat pendidikan teknologi dan informasi. Jurusan pertama yang dibuka adalah Teknik Komputer dan Jaringan (TKJ) serta Teknik Elektronika Industri (TEI), yang kini telah berkembang menjadi 8 jurusan sesuai minat siswa.
                 </p>
-                <p>Lokasi sekolah yang strategis, berada di wilayah perbatasan Indonesia dengan Singapura dan Malaysia,
-                    menjadikan SMKN 1 Bintan Utara sebagai pusat pengembangan pendidikan teknologi dan informasi di
-                    kawasan Bintan. Posisi ini sekaligus membuka peluang besar bagi siswa untuk memiliki wawasan
-                    internasional, khususnya dalam bidang teknologi, industri, serta kewirausahaan.
-                </p>
-                <p>Jurusan pertama yang dibuka di sekolah ini adalah Teknik Komputer dan Jaringan (TKJ) serta Teknik
-                    Elektronika Industri (TEI). Seiring berjalannya waktu, jurusan di sekolah ini berkembang hingga
-                    mencakup delapan bidang keahlian yang siap menampung minat beragam siswa. Dengan fasilitas
-                    pembelajaran yang terus ditingkatkan, SMKN 1 Bintan Utara berkomitmen memberikan pengalaman belajar
-                    terbaik bagi setiap siswanya.
-                </p>
-                <p>Selain mengembangkan keterampilan teknis, sekolah ini juga mendorong siswa agar berprestasi di bidang
-                    akademik, non-akademik, hingga kewirausahaan. Setiap jurusan memiliki program unggulan yang
-                    dirancang untuk menyalurkan potensi siswa secara maksimal. Tidak hanya diarahkan untuk siap kerja,
-                    siswa juga didorong agar mampu menciptakan peluang usaha sendiri dengan ide-ide kreatif yang
-                    inovatif.
-                </p>
-                <p>Kepala sekolah beserta guru-guru selalu menanamkan semangat bahwa setiap siswa memiliki kesempatan
-                    yang sama untuk meraih prestasi, apapun jurusan yang dipilihnya. Baik itu di bidang teknologi,
-                    bisnis, seni, maupun keterampilan lainnya, semua siswa diberi ruang untuk mengasah bakat dan meraih
-                    kesuksesan.
-                </p>
-                <p>Dengan semangat nasionalisme dan wawasan global, SMKN 1 Bintan Utara terus berupaya menjadi sekolah
-                    yang tidak hanya mencetak lulusan terampil, tetapi juga berkarakter, berdaya saing tinggi, serta
-                    siap menghadapi tantangan era digital dan industri modern.
+                <p>
+                    SMKN 1 Bintan Utara berkomitmen pada mutu pembelajaran, pengembangan karakter, serta kewirausahaan. Siswa tidak hanya disiapkan untuk dunia kerja, tetapi juga didorong menciptakan peluang usaha. Dengan dukungan fasilitas, program unggulan, serta semangat nasionalisme dan globalisasi, sekolah ini konsisten melahirkan lulusan yang terampil, berkarakter, dan siap menghadapi era digital serta industri modern.
                 </p>
             </div>
             <div>

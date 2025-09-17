@@ -19,19 +19,20 @@ section {
 .about h2 {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .about p.subtext {
   color: #666;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .about-box {
   background: #fff;
   border-radius: 10px;
   padding: 30px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: left;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -75,7 +76,7 @@ section {
   background: #fff;
   border-radius: 10px;
   padding: 30px;
-  max-width: 1000px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: left;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -105,7 +106,7 @@ section {
   background: #fff;
   border-radius: 10px;
   padding: 30px;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 20px auto;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: left;

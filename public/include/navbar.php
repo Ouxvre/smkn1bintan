@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c3e50;
+    background-color: #24334a;
     padding: 10px 70px;
     color: white;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@
   }
 
   .brand img {
-    height: 55px;
+    height: 40px;
     margin-right: 30px;
   }
 
@@ -65,6 +65,7 @@
     color: white;
     text-decoration: none;
     font-weight: 500;
+    font-size: 14px;
     transition: color 0.3s;
   }
 

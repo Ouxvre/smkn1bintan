@@ -139,7 +139,7 @@
 
                 <form action="../auth/login.php" method="POST">
                     <div class="input-field">
-                        <input type="text" placeholder="email" name="email" required>
+                        <input type="text" placeholder="username" name="username" required>
                     </div>
                     <div class="input-field">
                         <input type="password" placeholder="Password" name="password" required>

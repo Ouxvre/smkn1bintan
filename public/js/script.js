@@ -107,3 +107,18 @@ function showSlider(type) {
     next.click();
   }, timeAutoNext);
 }
+
+// news and event
+
+const tabs = document.querySelectorAll(".tabs button");
+const contents = document.querySelectorAll(".tab-content");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((t) => t.classList.remove("active"));
+    contents.forEach((c) => (c.style.display = "none"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.target).style.display = "block";
+  });
+});

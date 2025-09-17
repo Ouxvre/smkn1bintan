@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +22,7 @@
     <h4 class="text-center mb-4">Admin Panel</h4>
     <a href="#"><i class="fa fa-home"></i> Dashboard</a>
     <a href="#"><i class="fa fa-users"></i> Users</a>
-    <a href="#"><i class="fa fa-newspaper"></i> Berita</a>
+    <a href="../public/dashboard/berita.php"><i class="fa fa-newspaper"></i> Berita</a>
     <a href="#"><i class="fa fa-bullhorn"></i> Pengumuman</a>
     <a href="#"><i class="fa fa-calendar"></i> Agenda</a>
     <a href="#"><i class="fa fa-images"></i> Galeri</a>
