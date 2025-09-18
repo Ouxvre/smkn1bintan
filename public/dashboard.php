@@ -1,4 +1,14 @@
-<?php include 'include/check_login.php'?>
+<?php
+include 'include/check_login.php';
+
+if (!isset($_SESSION['username'])) {
+  header("Location: ../auth/login.php");
+  exit;
+}
+
+// siapkan path foto profil
+$profilePic = $_SESSION['profile_pic'] ?? 'assets/image/profile/default.png';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +33,7 @@
     <a href="#"><i class="fa fa-bullhorn"></i> Pengumuman</a>
     <a href="#"><i class="fa fa-calendar"></i> Agenda</a>
     <a href="#"><i class="fa fa-cogs"></i> Settings</a>
-    <a href="../auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
+    <a href="/smkn1bintan/auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
   </div>
 
   <!-- Content -->
@@ -31,9 +41,11 @@
     <!-- Top Navbar -->
     <nav class="navbar navbar-light bg-white mb-4 shadow-sm">
       <span class="navbar-brand mb-0 h4">Dashboard</span>
-      <div>
-        <span class="me-3">Hi, Admin</span>
-        <img src="assets/admin.png" alt="Admin" width="35" class="rounded-circle">
+      <div class="d-flex align-items-center">
+        <span class="me-3">Hi, <?= htmlspecialchars($_SESSION['username']); ?></span>
+        <img src="<?= htmlspecialchars($_SESSION['profile_pic']); ?>" alt="Profile" width="35"
+          class="rounded-circle border" style="object-fit: cover; height: 35px;">
+
       </div>
     </nav>
 
@@ -125,4 +137,5 @@
   </div>
 
 </body>
+
 </html>

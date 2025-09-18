@@ -11,6 +11,8 @@
 body {
   /* overflow: hidden; */
   font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding-top: 70px;
 }
 
 /* Splash screen */
@@ -60,6 +62,12 @@ body {
 
 /* Navbar */
 .navbar {
+  position: fixed; /* bikin nempel */
+  top: 0; /* selalu di atas */
+  left: 0;
+  width: 100%; /* full lebar */
+  z-index: 1000; /* biar di atas konten lain */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -132,7 +140,7 @@ body {
   background-image: url("../image/frontschool.jpg");
   background-size: cover;
   background-position: center;
-  height: 620px;
+  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -304,7 +312,7 @@ body {
 .bagan {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 200px;
   margin: 50px 0;
   flex-wrap: wrap;
 }
@@ -379,7 +387,7 @@ body {
 .fitur-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  gap: 100px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -399,6 +407,15 @@ body {
   background-color: royalblue;
   border-radius: 50%;
   margin: 0 auto 20px;
+
+  display: flex;            
+  align-items: center;        
+  justify-content: center;    
+}
+
+.fitur-icon i {
+  font-size: 24px;             
+  color: white;               
 }
 
 .fitur-content {
@@ -526,7 +543,7 @@ body {
   gap: 20px;
 }
 .thumbnail .item {
-  width: 150px;
+  width: 185px;
   height: 220px;
   flex-shrink: 0;
   position: relative;
@@ -737,44 +754,44 @@ body {
   }
 }
 
-.thumbnail .item:nth-child(n+4) {
+.thumbnail .item:nth-child(n + 4) {
   display: none;
 }
 
 /* news and event */
 .section-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 40px;
-    margin: 50px 0 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 50px 0 50px;
 }
 
 .tabs {
-    display: flex;
-    justify-content: center;
-    background: #0d2956;
-    border-radius: 25px;
-    padding: 5px;
-    max-width: 800px;
-    margin: 0 auto 90px;
-    list-style: none;
-    gap: 150px;
+  display: flex;
+  justify-content: center;
+  background: #0d2956;
+  border-radius: 25px;
+  padding: 5px;
+  max-width: 800px;
+  margin: 0 auto 90px;
+  list-style: none;
+  gap: 150px;
 }
 
 .tabs button {
-    border: none;
-    border-radius: 25px;
-    background: transparent;
-    color: #fff;
-    font-weight: 600;
-    padding: 10px 50px;
-    cursor: pointer;
-    transition: all 0.3s;
+  border: none;
+  border-radius: 25px;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .tabs button.active {
-    background: #fff;
-    color: #000;
+  background: #fff;
+  color: #000;
 }
 
 /* Slider */
@@ -803,47 +820,47 @@ body {
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .article-card .thumb {
-    height: 150px;
-    background: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #555;
-    font-size: 14px;
+  height: 150px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 14px;
 }
 
 .article-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .article-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-    background: #e9ecef;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  background: #e9ecef;
 }
 
 .article-card .content {
-    padding: 12px;
+  padding: 12px;
 }
 
 .article-card h5 {
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .meta {
-    font-size: 13px;
-    color: #666;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 /* Tombol slider */
@@ -863,7 +880,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .slider-btn.prev {
@@ -891,9 +908,13 @@ body {
   }
 }
 @media (max-width: 992px) {
-  .articles-wrapper { width: 100%; }
+  .articles-wrapper {
+    width: 100%;
+  }
 }
 
 @media (max-width: 640px) {
-  .articles-wrapper { width: 100%; }
+  .articles-wrapper {
+    width: 100%;
+  }
 }

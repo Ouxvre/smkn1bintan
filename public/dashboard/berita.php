@@ -11,7 +11,7 @@ if (isset($_POST['simpan'])) {
 
     $gambar = $_FILES['gambar']['name'];
     $tmp    = $_FILES['gambar']['tmp_name'];
-    $folder = "../assets/image/" . $gambar;
+    $folder = "../assets/image/berita" . $gambar;
 
     if (!empty($gambar)) {
         if (move_uploaded_file($tmp, $folder)) {

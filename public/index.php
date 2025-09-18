@@ -117,12 +117,6 @@
             <h3>Biodata Sekolah</h3>
             <a href="profil.php" class="btn">Load More</a>
         </div>
-
-        <div class="card-bagan" data-aos="fade-up" data-aos-delay="600">
-            <i class="fas fa-school"></i>
-            <h3>Biodata Sekolah</h3>
-            <a href="profil.php" class="btn">Load More</a>
-        </div>
     </div>
 
 
@@ -137,7 +131,7 @@
 
         <div class="fitur-container">
             <div class="fitur-box" data-aos="fade-right">
-                <div class="fitur-icon"></div>
+                <div class="fitur-icon"><i class="fa-solid fa-briefcase"></i></div>
                 <div class="fitur-content">
                     <h3>Siap Kerja</h3>
                     <p>
@@ -147,7 +141,7 @@
                 </div>
             </div>
             <div class="fitur-box" data-aos="fade-up">
-                <div class="fitur-icon"></div>
+                <div class="fitur-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
                 <div class="fitur-content">
                     <h3>Fasilitas Modern</h3>
                     <p>
@@ -157,7 +151,7 @@
                 </div>
             </div>
             <div class="fitur-box" data-aos="fade-left">
-                <div class="fitur-icon"></div>
+                <div class="fitur-icon"><i class="fa-solid fa-chalkboard-teacher"></i></div>
                 <div class="fitur-content">
                     <h3>Guru Berpengalaman</h3>
                     <p>
@@ -167,14 +161,14 @@
                 </div>
             </div>
             <div class="fitur-box" data-aos="fade-right">
-                <div class="fitur-icon"></div>
+                <div class="fitur-icon"><i class="fa-solid fa-handshake"></i></div>
                 <div class="fitur-content">
                     <h3>Kerjasama Industri</h3>
                     <p>Didukung berbagai perusahaan untuk magang & penempatan kerja</p>
                 </div>
             </div>
             <div class="fitur-box" data-aos="fade-up">
-                <div class="fitur-icon"></div>
+                <div class="fitur-icon"><i class="fa-solid fa-flag"></i></div>
                 <div class="fitur-content">
                     <h3>Kerjasama Nasional</h3>
                     <p>
@@ -183,7 +177,7 @@
                 </div>
             </div>
             <div class="fitur-box" data-aos="fade-left">
-                <div class="fitur-icon"></div>
+                <div class="fitur-icon"><i class="fa-solid fa-globe"></i></div>
                 <div class="fitur-content">
                     <h3>Akses Digital</h3>
                     <p>
@@ -386,52 +380,28 @@
         <!-- list thumnail -->
         <div class="thumbnail">
             <div class="item">
-                <img src="assets/image/img1.jpg" />
-                <div class="content">
-                    <div class="title">Rekayasa Perangkat Lunak</div>
-                </div>
+                <img src="assets/image/logo_jurusan/rpl.png" />
             </div>
             <div class="item">
-                <img src="assets/image/img2.jpg" />
-                <div class="content">
-                    <div class="title">Teknik Jaringan komputer</div>
-                </div>
+                <img src="assets/image/logo_jurusan/tkj.png" />
             </div>
             <div class="item">
-                <img src="assets/image/img3.jpg" />
-                <div class="content">
-                    <div class="title">Teknik Instalasi Listrik</div>
-                </div>
+                <img src="assets/image/logo_jurusan/titl.png" />
             </div>
             <div class="item">
-                <img src="assets/image/img4.jpg" />
-                <div class="content">
-                    <div class="title">Teknik Elektronika Industri</div>
-                </div>
+                <img src="assets/image/logo_jurusan/tei.png" />
             </div>
             <div class="item">
-                <img src="assets/image/img4.jpg" />
-                <div class="content">
-                    <div class="title">Perhotelan</div>
-                </div>
+                <img src="assets/image/logo_jurusan/ph.png" />
             </div>
             <div class="item">
-                <img src="assets/image/img4.jpg" />
-                <div class="content">
-                    <div class="title">Teknik Pengelasan</div>
-                </div>
+                <img src="assets/image/logo_jurusan/tp.png" />
             </div>
             <div class="item">
-                <img src="assets/image/img4.jpg" />
-                <div class="content">
-                    <div class="title">Teknik Konstruksi Pembangunan</div>
-                </div>
+                <img src="assets/image/logo_jurusan/tkdp.png" />           
             </div>
             <div class="item">
-                <img src="assets/image/img4.jpg" />
-                <div class="content">
-                    <div class="title">Teknik Kendaraan Ringan</div>
-                </div>
+                <img src="assets/image/logo_jurusan/tkr.png" />
             </div>
         </div>
         <!-- next prev -->

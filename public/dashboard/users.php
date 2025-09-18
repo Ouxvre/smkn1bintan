@@ -1,10 +1,17 @@
 <?php
-// Dummy data user, nanti bisa diganti dengan database
-$users = [
-    ["id" => 1, "username" => "admin", "role" => "Admin", "email" => "admin@smkn1.ac.id"],
-    ["id" => 2, "username" => "editor", "role" => "Editor", "email" => "editor@smkn1.ac.id"]
-];
+include '../include/admin_only.php';
+include '../../config/config.php';
+
+
+// Ambil data users dari tabel
+$result = mysqli_query($conn, "SELECT * FROM users");
+
+$users = [];
+while ($row = mysqli_fetch_assoc($result)) {
+    $users[] = $row;
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,37 +25,37 @@ $users = [
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <style>
-    .sidebar {
-        height: 100vh;
-        background: #2d3b61;
-        color: #fff;
-        padding: 20px 0;
-        position: fixed;
-        width: 250px;
-    }
+        .sidebar {
+            height: 100vh;
+            background: #2d3b61;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            width: 250px;
+        }
 
-    .sidebar h4 {
-        font-weight: bold;
-    }
+        .sidebar h4 {
+            font-weight: bold;
+        }
 
-    .sidebar a {
-        color: #fff;
-        display: block;
-        padding: 12px 20px;
-        text-decoration: none;
-        border-radius: 8px;
-        margin: 5px 10px;
-        transition: all 0.3s ease;
-    }
+        .sidebar a {
+            color: #fff;
+            display: block;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 5px 10px;
+            transition: all 0.3s ease;
+        }
 
-    .sidebar a:hover {
-        background: rgba(255, 255, 255, 0.2);
-    }
+        .sidebar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
     </style>
 </head>
 
 <body>
-    
+
     <!-- Sidebar -->
     <div class="sidebar">
         <h4 class="text-center mb-4">Admin Panel</h4>
@@ -58,7 +65,7 @@ $users = [
         <a href="#"><i class="fa fa-bullhorn"></i> Pengumuman</a>
         <a href="#"><i class="fa fa-calendar"></i> Agenda</a>
         <a href="#"><i class="fa fa-cogs"></i> Settings</a>
-        <a href="../auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
+        <a href="/smkn1bintan/auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
     </div>
 
     <!-- Content -->
@@ -72,11 +79,12 @@ $users = [
                     <th>Username</th>
                     <th>Email</th>
                     <th>Role</th>
+                    <th>Foto</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($users as $user): ?>
+                <?php foreach ($users as $user): ?>
                     <tr>
                         <td><?= $user["id"] ?></td>
                         <td><?= $user["username"] ?></td>
@@ -86,16 +94,48 @@ $users = [
                                 <?= $user["role"] ?>
                             </span>
                         </td>
+
+                        <td class="d-flex justify-content-center">
+                            <?php
+                            if (!empty($user["profile_pic"])) {
+                                $fotoPath = "../" . $user["profile_pic"];
+                            } else {
+                                $fotoPath = "../assets/image/profile/default.jpeg";
+                            }
+                            ?>
+                            <img src="<?= $fotoPath ?>" width="40" height="40" class="rounded-circle border"
+                                style="object-fit: cover;">
+                        </td>
+
+
+
                         <td>
-                            <a href="edit_user.php?id=<?= $user["id"] ?>" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="delete_user.php?id=<?= $user["id"] ?>" class="btn btn-danger btn-sm"
-                               onclick="return confirm('Yakin ingin hapus user ini?')">Hapus</a>
+                            <a href="../../crud/users/edit_user.php?id=<?= $user["id"] ?>"
+                                class="btn btn-warning btn-sm">Edit</a>
+                            <a href="../../crud/users/delete_user.php?id=<?= $user["id"] ?>" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Yakin ingin hapus user ini?')">Hapus</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
+
         </table>
-        <a href="add_user.php" class="btn btn-success">+ Tambah User</a>
+        <a href="../register.php" class="btn btn-success">+ Tambah User</a>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<?php if (isset($_GET['status']) && $_GET['status'] == 'deleted'): ?>
+    <script>
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success',
+            title: 'User berhasil dihapus',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true
+        });
+    </script>
+<?php endif; ?>
+
 </html>
