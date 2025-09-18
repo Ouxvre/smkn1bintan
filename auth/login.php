@@ -2,41 +2,24 @@
 session_start();
 include("../config/config.php");
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $input = mysqli_real_escape_string($conn, $_POST['username']); 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE username='$input' OR email='$input' LIMIT 1";
-    $res = mysqli_query($conn, $sql);
+    $sql = "SELECT * FROM users WHERE username='$username' LIMIT 1";
+    $result = mysqli_query($conn, $sql);
+    $user = mysqli_fetch_assoc($result);
 
-    if ($res && mysqli_num_rows($res) > 0) {
-        $row = mysqli_fetch_assoc($res);
+    if ($user && password_verify($password, $user['password'])) {
+        // Simpan session
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['role'] = $user['role'];
 
-        if (password_verify($password, $row['password'])) {
-            // ✅ Simpan session
-            $_SESSION['user_id']    = $row['id'];        // <-- penting
-            $_SESSION['username']   = $row['username'];
-            $_SESSION['role']       = $row['role'];
-
-            // handle foto
-            if (!empty($row['profile_pic'])) {
-                if ($row['role'] === 'Admin') {
-                    $_SESSION['profile_pic'] = '../assets/image/profile/admin_profile/' . $row['profile_pic'];
-                } else {
-                    $_SESSION['profile_pic'] = '../assets/image/profile/editor_profile/' . $row['profile_pic'];
-                }
-            } else {
-                $_SESSION['profile_pic'] = '../assets/image/profile/default.jpeg';
-            }
-
-            header("Location: /smkn1bintan/public/dashboard.php");
-
-            exit;
-        } else {
-            $error = "Password salah.";
-        }
+        header("Location: ../public/dashboard.php");
+        exit;
     } else {
-        $error = "User tidak ditemukan.";
+        echo "<script>alert('Login gagal! Username atau password salah.'); window.location='../public/login.html';</script>";
     }
 }
 ?>

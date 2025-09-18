@@ -1,52 +1,44 @@
 <?php
-include '../../config/config.php';
+session_start();
+include("../../config/config.php");
 
-$alertMsg = "";
-$alertType = "";
+// Hapus berita
+if (isset($_GET['hapus'])) {
+    $id = intval($_GET['hapus']);
 
-if (isset($_POST['simpan'])) {
-    $judul    = mysqli_real_escape_string($conn, $_POST['judul']);
-    $kategori = mysqli_real_escape_string($conn, $_POST['kategori']);
-    $isi      = mysqli_real_escape_string($conn, $_POST['isi']);
+    // Ambil data berita dulu (buat cek file gambar)
+    $res = $conn->query("SELECT gambar FROM berita WHERE id = $id");
+    if ($res && $res->num_rows > 0) {
+        $row = $res->fetch_assoc();
+        $gambar = $row['gambar'];
 
-    $gambar = $_FILES['gambar']['name'];
-    $tmp    = $_FILES['gambar']['tmp_name'];
-    $folder = "../assets/image/berita" . $gambar;
-
-    if (!empty($gambar)) {
-        if (move_uploaded_file($tmp, $folder)) {
-            $sql = "INSERT INTO berita (judul, kategori, isi, gambar, tanggal) 
-                    VALUES ('$judul', '$kategori', '$isi', '$gambar', NOW())";
-        } else {
-            $alertMsg = "❌ Upload gambar gagal!";
-            $alertType = "error";
+        // Hapus file gambar kalau ada
+        $path = "../assets/image/berita/" . $gambar;
+        if (!empty($gambar) && file_exists($path)) {
+            unlink($path); // hapus file fisik
         }
-    } else {
-        $sql = "INSERT INTO berita (judul, kategori, isi, tanggal) 
-                VALUES ('$judul', '$kategori', '$isi', NOW())";
     }
 
-    if (empty($alertMsg)) {
-        if ($conn->query($sql) === TRUE) {
-            $alertMsg = "✅ Berita berhasil ditambahkan!";
-            $alertType = "success";
-        } else {
-            $alertMsg = "❌ SQL Error: " . $conn->error;
-            $alertType = "error";
-        }
+    // Baru hapus dari database
+    $sql = "DELETE FROM berita WHERE id = $id";
+    if ($conn->query($sql)) {
+        $msg = "✅ Berita berhasil dihapus!";
+    } else {
+        $msg = "❌ Gagal menghapus: " . $conn->error;
     }
 }
-?>
 
+
+// Ambil semua berita
+$result = $conn->query("SELECT * FROM berita ORDER BY tanggal DESC");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Berita</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
@@ -172,9 +164,9 @@ if (isset($_POST['simpan'])) {
         right: 20px;
         /* geser masuk */
     }
+
     </style>
 </head>
-
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
@@ -189,54 +181,70 @@ if (isset($_POST['simpan'])) {
     </div>
 
     <!-- Content -->
-    <div class="content">
-        <h2><i class="fa fa-newspaper"></i> Tambah Berita</h2>
-        <form action="" method="POST" enctype="multipart/form-data">
-            <div class="form-group">
-                <label><i class="fa fa-heading"></i> Judul Berita</label>
-                <input type="text" name="judul" placeholder="Masukkan judul berita..." required>
-            </div>
-            <div class="form-group">
-                <label><i class="fa fa-list"></i> Kategori</label>
-                <select name="kategori" required>
-                    <option value="berita">Berita</option>
-                    <option value="prestasi">Prestasi</option>
-                    <option value="informasi">Informasi</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label><i class="fa fa-align-left"></i> Isi Berita</label>
-                <textarea name="isi" rows="6" placeholder="Tulis isi berita di sini..." required></textarea>
-            </div>
-            <div class="form-group">
-                <label><i class="fa fa-image"></i> Upload Gambar</label>
-                <input type="file" name="gambar" accept="image/*">
-            </div>
-            <button type="submit" name="simpan"><i class="fa fa-save"></i> Simpan Berita</button>
-        </form>
+    <div class="content p-4">
+        <h2><i class="fa fa-newspaper"></i> Daftar Berita</h2>
+
+        <?php if (!empty($msg)): ?>
+            <div class="alert alert-info"><?= $msg ?></div>
+        <?php endif; ?>
+
+        <a href="../../crud/berita/add_berita.php" class="btn btn-primary mb-3">
+            <i class="fa fa-plus"></i> Tambah Berita
+        </a>
+
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>No</th>
+                    <th>Judul</th>
+                    <th>Kategori</th>
+                    <th>Tanggal</th>
+                    <th>Gambar</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if ($result->num_rows > 0): ?>
+                    <?php $no = 1; while ($row = $result->fetch_assoc()): ?>
+                        <tr>
+                            <td><?= $no++ ?></td>
+                            <td><?= htmlspecialchars($row['judul']) ?></td>
+                            <td>
+                                <?php if($row['kategori'] == "berita"): ?>
+                                    <span class="badge bg-primary">Berita</span>
+                                <?php elseif($row['kategori'] == "prestasi"): ?>
+                                    <span class="badge bg-success">Prestasi</span>
+                                <?php else: ?>
+                                    <span class="badge bg-info">Informasi</span>
+                                <?php endif; ?>
+                            </td>
+                            <td><?= $row['tanggal'] ?></td>
+                            <td>
+                                <?php if(!empty($row['gambar'])): ?>
+                                    <img src="../assets/image/berita/<?= $row['gambar'] ?>" width="80">
+                                <?php else: ?>
+                                    <span class="text-muted">-</span>
+                                <?php endif; ?>
+                            </td>
+                            <td>
+                                <a href="edit_berita.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">
+                                    <i class="fa fa-edit"></i> Edit
+                                </a>
+                                <a href="berita.php?hapus=<?= $row['id'] ?>" 
+                                   class="btn btn-danger btn-sm"
+                                   onclick="return confirm('Yakin ingin hapus berita ini?')">
+                                   <i class="fa fa-trash"></i> Hapus
+                                </a>
+                            </td>
+                        </tr>
+                    <?php endwhile; ?>
+                <?php else: ?>
+                    <tr>
+                        <td colspan="6" class="text-center">Belum ada berita</td>
+                    </tr>
+                <?php endif; ?>
+            </tbody>
+        </table>
     </div>
-
-    <script>
-    function showAlert(message, type = "success") {
-        let alertBox = document.createElement("div");
-        alertBox.className = "alert " + (type === "error" ? "error" : "");
-        alertBox.innerText = message;
-        document.body.appendChild(alertBox);
-
-        setTimeout(() => {
-            alertBox.classList.add("show");
-        }, 10);
-
-        setTimeout(() => {
-            alertBox.classList.remove("show");
-            setTimeout(() => alertBox.remove(), 500);
-        }, 3000);
-    }
-
-    <?php if (!empty($alertMsg)) { ?>
-    showAlert("<?= $alertMsg ?>", "<?= $alertType ?>");
-    <?php } ?>
-    </script>
 </body>
-
 </html>

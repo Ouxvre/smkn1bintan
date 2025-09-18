@@ -2,12 +2,10 @@
 include 'include/check_login.php';
 
 if (!isset($_SESSION['username'])) {
-  header("Location: ../auth/login.php");
-  exit;
-}
+header("Location: /smkn1bintan/auth/login.php");
+exit;
 
-// siapkan path foto profil
-$profilePic = $_SESSION['profile_pic'] ?? 'assets/image/profile/default.png';
+}
 ?>
 
 <!DOCTYPE html>

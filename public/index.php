@@ -439,7 +439,7 @@
                         echo "
                         <div class='article-card'>
                           <div class='thumb'>
-                            <img src='assets/image/{$row['gambar']}' alt='{$row['judul']}'>
+                            <img src='assets/image/berita/{$row['gambar']}' alt='{$row['judul']}'>
                           </div>
                           <div class='content'>
                             <h5>{$row['judul']}</h5>
@@ -471,7 +471,7 @@
                         echo "
                         <div class='article-card'>
                           <div class='thumb'>
-                            <img src='assets/image/{$row['gambar']}' alt='{$row['judul']}'>
+                            <img src='assets/image/berita/{$row['gambar']}' alt='{$row['judul']}'>
                           </div>
                           <div class='content'>
                             <h5>{$row['judul']}</h5>
@@ -503,7 +503,7 @@
                         echo "
                         <div class='article-card'>
                           <div class='thumb'>
-                            <img src='assets/image/{$row['gambar']}' alt='{$row['judul']}'>
+                            <img src='assets/image/berita/{$row['gambar']}' alt='{$row['judul']}'>
                           </div>
                           <div class='content'>
                             <h5>{$row['judul']}</h5>
