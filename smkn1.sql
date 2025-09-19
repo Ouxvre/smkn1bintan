@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Sep 2025 pada 04.36
--- Versi server: 10.4.32-MariaDB
--- Versi PHP: 8.0.30
+-- Generation Time: Sep 19, 2025 at 03:20 PM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.3.20
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `berita`
+-- Table structure for table `berita`
 --
 
 CREATE TABLE `berita` (
@@ -34,10 +34,10 @@ CREATE TABLE `berita` (
   `isi` text NOT NULL,
   `gambar` varchar(255) DEFAULT NULL,
   `tanggal` datetime DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `berita`
+-- Dumping data for table `berita`
 --
 
 INSERT INTO `berita` (`id`, `judul`, `kategori`, `isi`, `gambar`, `tanggal`) VALUES
@@ -51,7 +51,7 @@ INSERT INTO `berita` (`id`, `judul`, `kategori`, `isi`, `gambar`, `tanggal`) VAL
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `gallery`
+-- Table structure for table `gallery`
 --
 
 CREATE TABLE `gallery` (
@@ -59,10 +59,10 @@ CREATE TABLE `gallery` (
   `title` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `gallery`
+-- Dumping data for table `gallery`
 --
 
 INSERT INTO `gallery` (`id`, `title`, `image`, `created_at`) VALUES
@@ -82,7 +82,35 @@ INSERT INTO `gallery` (`id`, `title`, `image`, `created_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `users`
+-- Table structure for table `staff`
+--
+
+CREATE TABLE `staff` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `jabatan` varchar(150) NOT NULL,
+  `role` enum('kepala_sekolah','wakil_kepala','kepala_program','guru','tenaga_kependidikan') NOT NULL,
+  `foto` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `staff`
+--
+
+INSERT INTO `staff` (`id`, `nama`, `jabatan`, `role`, `foto`) VALUES
+(12, 'Penokk', 'Kepala Sekolah', 'kepala_sekolah', '1758276811_324504274_503253338562636_572588622451147049_n.jpg'),
+(13, 'bujang', 'wakil kepala sekolah', 'wakil_kepala', '1758278605_Desain tanpa judul.png'),
+(14, 'Penok', 'Guru Matematika', 'guru', '1758278921_WhatsApp Image 2024-04-21 at 21.36.55_34d3e8dc.jpg'),
+(15, 'bujang', 'kepala jurusan  RPL', 'kepala_program', '1758280350_WhatsApp Image 2025-09-19 at 17.56.07_6e1e96a7.jpg'),
+(16, 'asdwa', 'Staff TU', 'tenaga_kependidikan', '1758280389_WhatsApp Image 2025-09-19 at 17.56.09_eb277030.jpg'),
+(17, 'bujang', 'Guru Agama Islam', 'guru', '1758280408_WhatsApp Image 2025-09-19 at 17.56.10_c86c13f3.jpg'),
+(18, 'asdwa', 'Staff TU', 'tenaga_kependidikan', '1758280432_WhatsApp Image 2025-09-19 at 17.56.10_0143e7f3.jpg'),
+(19, 'Penok', 'Kepala Jurusan TKJ', 'kepala_program', '1758280464_WhatsApp Image 2025-09-19 at 17.56.11_74ef3e2b.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -92,58 +120,71 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `role` enum('Admin','Editor') DEFAULT 'Editor',
   `profile_pic` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `profile_pic`) VALUES
-(15, 'admin2', 'admin@gmail.com', '$2y$10$DnT7eNy8fgX6cY5WowoRUeeTSp32a0yPYpBiU7gK41nTCexaAgqBK', 'Admin', 'assets/image/profile/admin_profile/1758175784_webcam-toy-photo23.jpg');
+(15, 'admin2', 'admin@gmail.com', '$2y$10$DnT7eNy8fgX6cY5WowoRUeeTSp32a0yPYpBiU7gK41nTCexaAgqBK', 'Admin', 'assets/image/profile/admin_profile/1758175784_webcam-toy-photo23.jpg'),
+(19, 'dendy', 'dendxy@gmail.com', '$2y$10$6rcIK3SFiAXFXNRdnzumlOyR.vsWHB3okHXcSEW9dxnUN6ElQ8uq2', 'Editor', 'assets/image/profile/editor_profile/1758268779_324504274_503253338562636_572588622451147049_n.jpg');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `berita`
+-- Indexes for table `berita`
 --
 ALTER TABLE `berita`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `gallery`
+-- Indexes for table `gallery`
 --
 ALTER TABLE `gallery`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `users`
+-- Indexes for table `staff`
+--
+ALTER TABLE `staff`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `berita`
+-- AUTO_INCREMENT for table `berita`
 --
 ALTER TABLE `berita`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
--- AUTO_INCREMENT untuk tabel `gallery`
+-- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
--- AUTO_INCREMENT untuk tabel `users`
+-- AUTO_INCREMENT for table `staff`
+--
+ALTER TABLE `staff`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
