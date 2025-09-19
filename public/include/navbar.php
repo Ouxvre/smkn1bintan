@@ -97,10 +97,10 @@
   </div>
   <div class="nav-links">
     <a href="index.php">HOME</a>
-    <a href="#">PROFIL</a>
-    <a href="#">JURUSAN</a>
+    <a href="profil.php">PROFIL</a>
+    <a href="../jurusan/jurusan.php">JURUSAN</a>
     <a href="#">INFORMASI</a>
-    <a href="#">BERITA</a>
+    <a href="#berita">BERITA</a>
     <a href="#">PPDBB</a>
   </div>
 </div>

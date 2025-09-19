@@ -160,7 +160,7 @@
             <div class="left">
 
                 <div class="welcome-text">
-                    <h1>Register</h1>
+                    <h1>Add Users</h1>
                     <p>"Big dreams start with small habits."</p>
                 </div>
 

@@ -37,11 +37,11 @@
             </div>
         </div>
         <div class="nav-links">
-            <a href="#">HOME</a>
-            <a href="#">PROFIL</a>
-            <a href="#">JURUSAN</a>
+            <a href="index.php">HOME</a>
+            <a href="profil.php">PROFIL</a>
+            <a href="jurusan/jurusan.php">JURUSAN</a>
             <a href="#">INFORMASI</a>
-            <a href="#">BERITA</a>
+            <a href="#berita">BERITA</a>
             <a href="#">PPDBB</a>
         </div>
     </div>
@@ -54,7 +54,7 @@
         </div>
     </div>
 
-    <section class="about">
+    <section class="about1">
         <div class="about-left">
             <h2 data-aos="fade-right">SMK Negeri 1 Bintan <br />Utara</h2>
             <p data-aos="fade-right">
@@ -62,7 +62,7 @@
                 berkompeten dan siap kerja. Bergabunglah dengan ribuan siswa yang
                 telah meraih kesuksesan bersama kami.
             </p>
-            <a href="#" class="btn" data-aos="fade-up">Pelajari Lebih Lanjut</a>
+            <a href="profil.php" class="btn" data-aos="fade-up">Pelajari Lebih Lanjut</a>
         </div>
 
         <div class="divider-line"></div>
@@ -103,7 +103,7 @@
         <div class="card-bagan" data-aos="fade-up">
             <i class="fas fa-user"></i>
             <h3>Guru & Staff</h3>
-            <a href="guru-staff.html" class="btn">Load More</a>
+            <a href="pimpinan.php" class="btn">Load More</a>
         </div>
 
         <div class="card-bagan" data-aos="fade-up" data-aos-delay="200">
