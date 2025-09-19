@@ -172,10 +172,10 @@ $result = $conn->query("SELECT * FROM berita ORDER BY tanggal DESC");
     <div class="sidebar">
         <h4 class="text-center mb-4">Admin Panel</h4>
         <a href="../dashboard.php"><i class="fa fa-home"></i> Dashboard</a>
-        <a href="users.php"><i class="fa fa-users"></i> Users</a>
-        <a href="berita.php" class="active"><i class="fa fa-newspaper"></i> Berita</a>
-        <a href="gallery.php"><i class="fa fa-bullhorn"></i> Gallery</a>
-        <a href="#"><i class="fa fa-calendar"></i> Agenda</a>
+        <a href="../dashboard/users.php"><i class="fa fa-users"></i> Users</a>
+        <a href="../dashboard/berita.php" class="active"><i class="fa fa-newspaper"></i> Berita</a>
+        <a href="../dashboard/gallery.php"><i class="fa fa-bullhorn"></i> Gallery</a>
+        <a href="../dashboard/staff.php"><i class="fa fa-user-tie"></i> Staff</a>
         <a href="#"><i class="fa fa-cogs"></i> Settings</a>
         <a href="../auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
     </div>

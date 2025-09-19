@@ -37,12 +37,14 @@
             </div>
         </div>
         <div class="nav-links">
-            <a href="index.php">HOME</a>
+            <a href="index.php">BERANDA</a>
             <div class="dropdown">
-                <a href="#">PROFIL ▾</a>
+                <a href="#">TENTANG ▾</a>
                 <div class="dropdown-content">
-                    <a href="profil.php">Profil Sekolah</a>
-                    <a href="pimpinan.php">Profil Pimpinan</a>
+                    <a href="profil.php">Profile Sekolah</a>
+                    <a href="#">Galeri</a>
+                    <a href="#">Ekstrakulikuler</a>
+                    <a href="gurudantendik.php">Guru Dan Tendik</a>
                 </div>
             </div>
 

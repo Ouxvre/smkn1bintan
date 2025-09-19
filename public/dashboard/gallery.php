@@ -74,10 +74,10 @@ $result = mysqli_query($conn, "SELECT * FROM gallery ORDER BY created_at DESC");
     <div class="sidebar">
         <h4 class="text-center mb-4">Admin Panel</h4>
         <a href="../dashboard.php"><i class="fa fa-home"></i> Dashboard</a>
-        <a href="users.php"><i class="fa fa-users"></i> Users</a>
-        <a href="berita.php"><i class="fa fa-newspaper"></i> Berita</a>
-        <a href="gallery.php" class="bg-primary"><i class="fa fa-bullhorn"></i> Gallery</a>
-        <a href="#"><i class="fa fa-calendar"></i> Agenda</a>
+        <a href="../dashboard/users.php"><i class="fa fa-users"></i> Users</a>
+        <a href="../dashboard/berita.php"><i class="fa fa-newspaper"></i> Berita</a>
+        <a href="../dashboard/gallery.php" class="bg-primary"><i class="fa fa-bullhorn"></i> Gallery</a>
+        <a href="../dashboard/staff.php"><i class="fa fa-user-tie"></i> Staff</a>
         <a href="#"><i class="fa fa-cogs"></i> Settings</a>
         <a href="/smkn1bintan/auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
     </div>

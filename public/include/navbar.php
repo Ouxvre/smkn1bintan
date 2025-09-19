@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #24334a;
-    padding: 10px 70px;
+    padding: 20px 70px;
     color: white;
     flex-wrap: wrap;
     width: 100%;
@@ -58,7 +58,7 @@
 
   .nav-links {
     display: flex;
-    gap: 24px;
+    gap: 29px;
   }
 
   .nav-links a {
@@ -173,12 +173,15 @@
     </div>
   </div>
   <div class="nav-links">
-    <a href="index.php">HOME</a>
+    <a href="index.php">BERANDA</a>
+
     <div class="dropdown">
-      <a href="#">PROFIL ▾</a>
+      <a href="#">TENTANG ▾</a>
       <div class="dropdown-content">
-        <a href="#">Profil Sekolah</a>
-        <a href="#">Profil Pimpinan</a>
+        <a href="profil.php">Profile Sekolah</a>
+        <a href="#">Galeri</a>
+        <a href="#">Ekstrakulikuler</a>
+        <a href="gurudantendik.php">Guru Dan Tendik</a>
       </div>
     </div>
 

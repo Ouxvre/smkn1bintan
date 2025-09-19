@@ -1,11 +1,5 @@
 <?php
 include 'include/check_login.php';
-
-if (!isset($_SESSION['username'])) {
-header("Location: /smkn1bintan/auth/login.php");
-exit;
-
-}
 ?>
 
 <!DOCTYPE html>
@@ -28,8 +22,8 @@ exit;
     <a href="#"><i class="fa fa-home"></i> Dashboard</a>
     <a href="../public/dashboard/users.php"><i class="fa fa-users"></i> Users</a>
     <a href="../public/dashboard/berita.php"><i class="fa fa-newspaper"></i> Berita</a>
-    <a href="../public/dashboard/gallery.php"><i class="fa fa-bullhorn"></i> Gallery</a>
-    <a href="#"><i class="fa fa-calendar"></i> Agenda</a>
+    <a href="../public/dashboard/gallery.php"><i class="fa-solid fa-images"></i> Gallery</a>
+    <a href="../public/dashboard/staff.php"><i class="fa fa-user-tie"></i> Staff</a>
     <a href="#"><i class="fa fa-cogs"></i> Settings</a>
     <a href="/smkn1bintan/auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
   </div>
@@ -41,8 +35,8 @@ exit;
       <span class="navbar-brand mb-0 h4">Dashboard</span>
       <div class="d-flex align-items-center">
         <span class="me-3">Hi, <?= htmlspecialchars($_SESSION['username']); ?></span>
-        <!-- <img src="<?= htmlspecialchars($_SESSION['profile_pic']); ?>" alt="Profile" width="35"
-          class="rounded-circle border" style="object-fit: cover; height: 35px;"> -->
+        <img src="<?= htmlspecialchars($_SESSION['profile_pic']); ?>" alt="Profile" width="35"
+          class="rounded-circle border" style="object-fit: cover; height: 35px;">
       </div>
     </nav>
 

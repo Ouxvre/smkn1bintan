@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: ../public/dashboard.php");
         exit;
     } else {
-        echo "<script>alert('Login gagal! Username atau password salah.'); window.location='../public/login.html';</script>";
+        echo "<script>alert('Login gagal! Username atau password salah.'); window.location='../public/login.php';</script>";
     }
 }
 ?>
