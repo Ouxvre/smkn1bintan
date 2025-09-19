@@ -398,7 +398,7 @@
                 <img src="assets/image/logo_jurusan/tp.png" />
             </div>
             <div class="item">
-                <img src="assets/image/logo_jurusan/tkdp.png" />           
+                <img src="assets/image/logo_jurusan/tkdp.png" />
             </div>
             <div class="item">
                 <img src="assets/image/logo_jurusan/tkr.png" />
@@ -416,27 +416,27 @@
         <div class="time"></div>
     </div>
 
-<!-- berita dan artikel -->
-<div class="berita">
-    <h2 class="section-title">Artikel & Berita Terbaru</h2>
+    <!-- berita dan artikel -->
+    <div class="berita">
+        <h2 class="section-title">Artikel & Berita Terbaru</h2>
 
-    <!-- Tabs -->
-    <ul class="tabs">
-        <li><button class="active" data-target="berita">Berita</button></li>
-        <li><button data-target="prestasi">Prestasi</button></li>
-        <li><button data-target="informasi">Informasi</button></li>
-    </ul>
+        <!-- Tabs -->
+        <ul class="tabs">
+            <li><button class="active" data-target="berita">Berita</button></li>
+            <li><button data-target="prestasi">Prestasi</button></li>
+            <li><button data-target="informasi">Informasi</button></li>
+        </ul>
 
-    <!-- Berita -->
-    <div id="berita" class="tab-content">
-        <div class="slider-container">
-            <div class="articles-wrapper">
-                <div class="articles-container">
-                    <?php
-                    $result = $conn->query("SELECT * FROM berita WHERE kategori='berita' ORDER BY tanggal DESC LIMIT 12");
-                    if ($result->num_rows > 0) {
-                      while($row = $result->fetch_assoc()){
-                        echo "
+        <!-- Berita -->
+        <div id="berita" class="tab-content">
+            <div class="slider-container">
+                <div class="articles-wrapper">
+                    <div class="articles-container">
+                        <?php
+                        $result = $conn->query("SELECT * FROM berita WHERE kategori='berita' ORDER BY tanggal DESC LIMIT 12");
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo "
                         <div class='article-card'>
                           <div class='thumb'>
                             <img src='assets/image/berita/{$row['gambar']}' alt='{$row['judul']}'>
@@ -444,31 +444,31 @@
                           <div class='content'>
                             <h5>{$row['judul']}</h5>
                             <div class='meta'>📅 {$row['tanggal']}</div>
-                            <p>".substr(strip_tags($row['isi']),0,80)."...</p>
+                            <p>" . substr(strip_tags($row['isi']), 0, 80) . "...</p>
                           </div>
                         </div>";
-                      }
-                    } else {
-                      echo "<p>Belum ada berita.</p>";
-                    }
-                    ?>
+                            }
+                        } else {
+                            echo "<p>Belum ada berita.</p>";
+                        }
+                        ?>
+                    </div>
                 </div>
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
             </div>
-            <button class="slider-btn prev">❮</button>
-            <button class="slider-btn next">❯</button>
         </div>
-    </div>
 
-    <!-- Prestasi -->
-    <div id="prestasi" class="tab-content" style="display:none;">
-        <div class="slider-container">
-            <div class="articles-wrapper">
-                <div class="articles-container">
-                    <?php
-                    $result = $conn->query("SELECT * FROM berita WHERE kategori='prestasi' ORDER BY tanggal DESC LIMIT 12");
-                    if ($result->num_rows > 0) {
-                      while($row = $result->fetch_assoc()){
-                        echo "
+        <!-- Prestasi -->
+        <div id="prestasi" class="tab-content" style="display:none;">
+            <div class="slider-container">
+                <div class="articles-wrapper">
+                    <div class="articles-container">
+                        <?php
+                        $result = $conn->query("SELECT * FROM berita WHERE kategori='prestasi' ORDER BY tanggal DESC LIMIT 12");
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo "
                         <div class='article-card'>
                           <div class='thumb'>
                             <img src='assets/image/berita/{$row['gambar']}' alt='{$row['judul']}'>
@@ -476,31 +476,31 @@
                           <div class='content'>
                             <h5>{$row['judul']}</h5>
                             <div class='meta'>📅 {$row['tanggal']}</div>
-                            <p>".substr(strip_tags($row['isi']),0,80)."...</p>
+                            <p>" . substr(strip_tags($row['isi']), 0, 80) . "...</p>
                           </div>
                         </div>";
-                      }
-                    } else {
-                      echo "<p>Belum ada prestasi.</p>";
-                    }
-                    ?>
+                            }
+                        } else {
+                            echo "<p>Belum ada prestasi.</p>";
+                        }
+                        ?>
+                    </div>
                 </div>
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
             </div>
-            <button class="slider-btn prev">❮</button>
-            <button class="slider-btn next">❯</button>
         </div>
-    </div>
 
-    <!-- Informasi -->
-    <div id="informasi" class="tab-content" style="display:none;">
-        <div class="slider-container">
-            <div class="articles-wrapper">
-                <div class="articles-container">
-                    <?php
-                    $result = $conn->query("SELECT * FROM berita WHERE kategori='informasi' ORDER BY tanggal DESC LIMIT 12");
-                    if ($result->num_rows > 0) {
-                      while($row = $result->fetch_assoc()){
-                        echo "
+        <!-- Informasi -->
+        <div id="informasi" class="tab-content" style="display:none;">
+            <div class="slider-container">
+                <div class="articles-wrapper">
+                    <div class="articles-container">
+                        <?php
+                        $result = $conn->query("SELECT * FROM berita WHERE kategori='informasi' ORDER BY tanggal DESC LIMIT 12");
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo "
                         <div class='article-card'>
                           <div class='thumb'>
                             <img src='assets/image/berita/{$row['gambar']}' alt='{$row['judul']}'>
@@ -508,29 +508,55 @@
                           <div class='content'>
                             <h5>{$row['judul']}</h5>
                             <div class='meta'>📅 {$row['tanggal']}</div>
-                            <p>".substr(strip_tags($row['isi']),0,80)."...</p>
+                            <p>" . substr(strip_tags($row['isi']), 0, 80) . "...</p>
                           </div>
                         </div>";
-                      }
-                    } else {
-                      echo "<p>Belum ada informasi.</p>";
-                    }
-                    ?>
+                            }
+                        } else {
+                            echo "<p>Belum ada informasi.</p>";
+                        }
+                        ?>
+                    </div>
                 </div>
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
             </div>
-            <button class="slider-btn prev">❮</button>
-            <button class="slider-btn next">❯</button>
         </div>
     </div>
-</div>
 
-    <?php include 'include/footer.php'?>
+
+    <!-- Galeri Sekolah -->
+    <?php
+    $result = mysqli_query($conn, "SELECT * FROM gallery ORDER BY created_at DESC LIMIT 12");
+    ?>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Galeri Sekolah</h2>
+            <div class="gallery-grid">
+                <?php while ($row = mysqli_fetch_assoc($result)): ?>
+                    <div class="gallery-item">
+                        <img src="assets/image/gallery/<?= htmlspecialchars($row['image']) ?>"
+                            alt="<?= htmlspecialchars($row['title']) ?>">
+                    </div>
+                <?php endwhile; ?>
+            </div>
+            <div class="btn-wrapper">
+                <a href="gallery.php" class="btn">Find Out More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <?php include 'include/footer.php' ?>
 </body>
 
 <script src="js/script.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-AOS.init();
+    AOS.init();
 </script>
 
 </html>

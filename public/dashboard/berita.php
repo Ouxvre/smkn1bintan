@@ -174,7 +174,7 @@ $result = $conn->query("SELECT * FROM berita ORDER BY tanggal DESC");
         <a href="../dashboard.php"><i class="fa fa-home"></i> Dashboard</a>
         <a href="users.php"><i class="fa fa-users"></i> Users</a>
         <a href="berita.php" class="active"><i class="fa fa-newspaper"></i> Berita</a>
-        <a href="#"><i class="fa fa-bullhorn"></i> Pengumuman</a>
+        <a href="gallery.php"><i class="fa fa-bullhorn"></i> Gallery</a>
         <a href="#"><i class="fa fa-calendar"></i> Agenda</a>
         <a href="#"><i class="fa fa-cogs"></i> Settings</a>
         <a href="../auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>

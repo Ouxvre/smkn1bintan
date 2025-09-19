@@ -28,7 +28,7 @@ exit;
     <a href="#"><i class="fa fa-home"></i> Dashboard</a>
     <a href="../public/dashboard/users.php"><i class="fa fa-users"></i> Users</a>
     <a href="../public/dashboard/berita.php"><i class="fa fa-newspaper"></i> Berita</a>
-    <a href="#"><i class="fa fa-bullhorn"></i> Pengumuman</a>
+    <a href="../public/dashboard/gallery.php"><i class="fa fa-bullhorn"></i> Gallery</a>
     <a href="#"><i class="fa fa-calendar"></i> Agenda</a>
     <a href="#"><i class="fa fa-cogs"></i> Settings</a>
     <a href="/smkn1bintan/auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
@@ -115,7 +115,7 @@ exit;
       <div class="col-md-4">
         <div class="card text-center p-4">
           <i class="fa fa-plus-circle fa-2x mb-3 text-primary"></i>
-          <h6>Tambah Berita</h6>
+          <a href="../public/dashboard/berita.php"><h6>Tambah Berita</h6></a>
         </div>
       </div>
       <div class="col-md-4">

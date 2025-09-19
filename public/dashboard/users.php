@@ -62,7 +62,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         <a href="../dashboard.php"><i class="fa fa-home"></i> Dashboard</a>
         <a href="users.php" class="bg-primary"><i class="fa fa-users"></i> Users</a>
         <a href="berita.php"><i class="fa fa-newspaper"></i> Berita</a>
-        <a href="#"><i class="fa fa-bullhorn"></i> Pengumuman</a>
+        <a href="#"><i class="fa fa-bullhorn"></i> Gallery</a>
         <a href="#"><i class="fa fa-calendar"></i> Agenda</a>
         <a href="#"><i class="fa fa-cogs"></i> Settings</a>
         <a href="/smkn1bintan/auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
