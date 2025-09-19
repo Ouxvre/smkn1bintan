@@ -108,13 +108,13 @@ include 'include/check_login.php';
       <div class="col-md-4">
         <div class="card text-center p-4">
           <i class="fa fa-plus-circle fa-2x mb-3 text-primary"></i>
-          <a href="../public/dashboard/berita.php"><h6>Tambah Berita</h6></a>
+          <a href="../public/dashboard/berita.php" class="text-decoration-none text-dark"><h6>Tambah Berita</h6></a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card text-center p-4">
-          <i class="fa fa-calendar-plus fa-2x mb-3 text-success"></i>
-          <h6>Tambah Agenda</h6>
+          <i class="fa-solid fa-image fa-2x mb-3 text-success"></i>
+          <a href="../public/dashboard/gallery.php" class="text-decoration-none text-dark"><h6>Uploud Gallery</h6></a>
         </div>
       </div>
       <div class="col-md-4">

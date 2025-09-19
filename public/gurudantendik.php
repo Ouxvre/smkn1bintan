@@ -1,5 +1,6 @@
 <?php
 include '../config/config.php';
+include '../public/include/admin_only.php';
 ?>
 
 <!doctype html>

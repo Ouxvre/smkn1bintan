@@ -42,7 +42,7 @@
                 <a href="#">TENTANG ▾</a>
                 <div class="dropdown-content">
                     <a href="profil.php">Profile Sekolah</a>
-                    <a href="#">Galeri</a>
+                    <a href="#gallery">Galeri</a>
                     <a href="#">Ekstrakulikuler</a>
                     <a href="gurudantendik.php">Guru Dan Tendik</a>
                 </div>
@@ -133,7 +133,7 @@
         <div class="card-bagan" data-aos="fade-up">
             <i class="fas fa-user"></i>
             <h3>Guru & Staff</h3>
-            <a href="pimpinan.php" class="btn">Load More</a>
+            <a href="gurudantendik.php" class="btn">Load More</a>
         </div>
 
         <div class="card-bagan" data-aos="fade-up" data-aos-delay="200">
