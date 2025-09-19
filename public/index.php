@@ -31,16 +31,44 @@
     <div class="navbar">
         <div class="brand">
             <img src="assets/image/logo_smk.png" alt="Logo SMK" />
-            <div class="brand-text" data-aos="zoom-in">
+            <div class="brand-text">
                 <div class="title">SMK NEGERI 1</div>
                 <div class="subtitle">Bintan Utara</div>
             </div>
         </div>
         <div class="nav-links">
             <a href="index.php">HOME</a>
-            <a href="profil.php">PROFIL</a>
-            <a href="jurusan/jurusan.php">JURUSAN</a>
-            <a href="#">INFORMASI</a>
+            <div class="dropdown">
+                <a href="#">PROFIL ▾</a>
+                <div class="dropdown-content">
+                    <a href="profil.php">Profil Sekolah</a>
+                    <a href="pimpinan.php">Profil Pimpinan</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="../jurusan/jurusan.php">JURUSAN ▾</a>
+                <div class="dropdown-content">
+                    <a href="#">Rekayasa Perangkat Lunak</a>
+                    <a href="#">Perhotelan</a>
+                    <a href="#">Teknik Jaringan Komputer</a>
+                    <a href="#">Teknik Elektronika Industri</a>
+                    <a href="#">Teknik Instalasi Tenaga Listrik</a>
+                    <a href="#">Teknik Kendaraan Ringan</a>
+                    <a href="#">Teknik Pengelasan</a>
+                    <a href="#">Teknik Konstruksi Dan Pembangunan</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#">INFORMASI ▾</a>
+                <div class="dropdown-content">
+                    <a href="#">Agenda</a>
+                    <a href="#">Pengumuman</a>
+                    <a href="#">Kegiatan</a>
+                </div>
+            </div>
+
             <a href="#berita">BERITA</a>
             <a href="#">PPDBB</a>
         </div>
