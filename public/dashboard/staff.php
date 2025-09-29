@@ -1,5 +1,5 @@
 <?php
-include '../../config/config.php'; // sesuaikan path koneksi.php
+include '../../config/config.php';
 
 // Ambil data staff
 $result = $conn->query("SELECT * FROM staff ORDER BY id DESC");
@@ -63,6 +63,7 @@ $result = $conn->query("SELECT * FROM staff ORDER BY id DESC");
         <a href="../../public/dashboard/users.php"><i class="fa fa-users"></i> Users</a>
         <a href="../../public/dashboard/berita.php"><i class="fa fa-newspaper"></i> Berita</a>
         <a href="../../public/dashboard/gallery.php"><i class="fa fa-bullhorn"></i> Gallery</a>
+        <a href="../dashboard/ekstrakurikuler.php"><i class="fa-solid fa-images"></i> Ekstrakurikuler</a>
         <a href="../../public/dashboard/staff.php" class="bg-primary"><i class="fa fa-user-tie"></i> Staff</a>
         <a href="#"><i class="fa fa-cogs"></i> Settings</a>
         <a href="/smkn1bintan/auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>

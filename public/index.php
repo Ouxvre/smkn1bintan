@@ -43,7 +43,7 @@
                 <div class="dropdown-content">
                     <a href="profil.php">Profile Sekolah</a>
                     <a href="galeri.php">Galeri</a>
-                    <a href="#">Ekstrakulikuler</a>
+                    <a href="ekstrakurikuler.php">Ekstrakulikuler</a>
                     <a href="gurudantendik.php">Guru Dan Tendik</a>
                 </div>
             </div>

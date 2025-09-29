@@ -23,6 +23,7 @@ include 'include/check_login.php';
     <a href="../public/dashboard/users.php"><i class="fa fa-users"></i> Users</a>
     <a href="../public/dashboard/berita.php"><i class="fa fa-newspaper"></i> Berita</a>
     <a href="../public/dashboard/gallery.php"><i class="fa-solid fa-images"></i> Gallery</a>
+    <a href="../public/dashboard/ekstrakurikuler.php"><i class="fa-solid fa-images"></i> Ekstrakurikuler</a>
     <a href="../public/dashboard/staff.php"><i class="fa fa-user-tie"></i> Staff</a>
     <a href="#"><i class="fa fa-cogs"></i> Settings</a>
     <a href="/smkn1bintan/auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>

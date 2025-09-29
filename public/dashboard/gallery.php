@@ -77,6 +77,7 @@ $result = mysqli_query($conn, "SELECT * FROM gallery ORDER BY created_at DESC");
         <a href="../dashboard/users.php"><i class="fa fa-users"></i> Users</a>
         <a href="../dashboard/berita.php"><i class="fa fa-newspaper"></i> Berita</a>
         <a href="../dashboard/gallery.php" class="bg-primary"><i class="fa fa-bullhorn"></i> Gallery</a>
+        <a href="../dashboard/ekstrakurikuler.php"><i class="fa-solid fa-images"></i> Ekstrakurikuler</a>
         <a href="../dashboard/staff.php"><i class="fa fa-user-tie"></i> Staff</a>
         <a href="#"><i class="fa fa-cogs"></i> Settings</a>
         <a href="/smkn1bintan/auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
