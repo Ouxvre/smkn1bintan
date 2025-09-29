@@ -51,14 +51,14 @@
             <div class="dropdown">
                 <a href="../jurusan/jurusan.php">JURUSAN ▾</a>
                 <div class="dropdown-content">
-                    <a href="#">Rekayasa Perangkat Lunak</a>
-                    <a href="#">Perhotelan</a>
-                    <a href="#">Teknik Jaringan Komputer</a>
-                    <a href="#">Teknik Elektronika Industri</a>
-                    <a href="#">Teknik Instalasi Tenaga Listrik</a>
-                    <a href="#">Teknik Kendaraan Ringan</a>
-                    <a href="#">Teknik Pengelasan</a>
-                    <a href="#">Teknik Konstruksi Dan Pembangunan</a>
+                    <a href="jurusan/RPL/rpl.html">Rekayasa Perangkat Lunak</a>
+                    <a href="jurusan/PH/ph.html">Perhotelan</a>
+                    <a href="jurusan/TEI/tei.html">Teknik Jaringan Komputer</a>
+                    <a href="jurusan/TITL/titl.html">Teknik Elektronika Industri</a>
+                    <a href="jurusan/TKDP/tkdp.html">Teknik Instalasi Tenaga Listrik</a>
+                    <a href="jurusan/TKJ/tkj.html">Teknik Kendaraan Ringan</a>
+                    <a href="jurusan/TKR/tkr.html">Teknik Pengelasan</a>
+                    <a href="jurusan/TP/tp.html">Teknik Konstruksi Dan Pembangunan</a>
                 </div>
             </div>
 
