@@ -179,7 +179,7 @@
       <a href="#">TENTANG ▾</a>
       <div class="dropdown-content">
         <a href="profil.php">Profile Sekolah</a>
-        <a href="#">Galeri</a>
+        <a href="galeri.php">Galeri</a>
         <a href="#">Ekstrakulikuler</a>
         <a href="gurudantendik.php">Guru Dan Tendik</a>
       </div>

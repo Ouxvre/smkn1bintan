@@ -35,8 +35,6 @@ include 'include/check_login.php';
       <span class="navbar-brand mb-0 h4">Dashboard</span>
       <div class="d-flex align-items-center">
         <span class="me-3">Hi, <?= htmlspecialchars($_SESSION['username']); ?></span>
-        <img src="<?= htmlspecialchars($_SESSION['profile_pic']); ?>" alt="Profile" width="35"
-          class="rounded-circle border" style="object-fit: cover; height: 35px;">
       </div>
     </nav>
 

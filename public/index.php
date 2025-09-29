@@ -42,7 +42,7 @@
                 <a href="#">TENTANG ▾</a>
                 <div class="dropdown-content">
                     <a href="profil.php">Profile Sekolah</a>
-                    <a href="#gallery">Galeri</a>
+                    <a href="galeri.php">Galeri</a>
                     <a href="#">Ekstrakulikuler</a>
                     <a href="gurudantendik.php">Guru Dan Tendik</a>
                 </div>
@@ -553,31 +553,6 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Galeri Sekolah -->
-    <?php
-    $result = mysqli_query($conn, "SELECT * FROM gallery ORDER BY created_at DESC LIMIT 12");
-    ?>
-
-    <section class="gallery">
-        <div class="container">
-            <h2>Galeri Sekolah</h2>
-            <div class="gallery-grid">
-                <?php while ($row = mysqli_fetch_assoc($result)): ?>
-                    <div class="gallery-item">
-                        <img src="assets/image/gallery/<?= htmlspecialchars($row['image']) ?>"
-                            alt="<?= htmlspecialchars($row['title']) ?>">
-                    </div>
-                <?php endwhile; ?>
-            </div>
-            <div class="btn-wrapper">
-                <a href="gallery.php" class="btn">Find Out More</a>
-            </div>
-        </div>
-    </section>
-
-
 
 
     <?php include 'include/footer.php' ?>
