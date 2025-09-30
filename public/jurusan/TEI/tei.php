@@ -37,12 +37,12 @@
                 <div class="dropdown-content">
                     <a href="../RPL/rpl.php">Rekayasa Perangkat Lunak</a>
                     <a href="../PH/ph.php">Perhotelan</a>
-                    <a href="../TEI/tkj.php">Teknik Jaringan Komputer</a>
-                    <a href="../TITL/tei.php">Teknik Elektronika Industri</a>
-                    <a href="../TKDP/titl.php">Teknik Instalasi Tenaga Listrik</a>
-                    <a href="../TKJ/tkr.php">Teknik Kendaraan Ringan</a>
-                    <a href="../TKR/tp.php">Teknik Pengelasan</a>
-                    <a href="../TP/tkdp.php">Teknik Konstruksi Dan Pembangunan</a>
+                    <a href="../TKJ/tkj.php">Teknik Jaringan Komputer</a>
+                    <a href="../TEI/tei.php">Teknik Elektronika Industri</a>
+                    <a href="../TITL/titl.php">Teknik Instalasi Tenaga Listrik</a>
+                    <a href="../TKR/tkr.php">Teknik Kendaraan Ringan</a>
+                    <a href="../TP/tp.php">Teknik Pengelasan</a>
+                    <a href="../TKDP/tkdp.php">Teknik Konstruksi Dan Pembangunan</a>
                 </div>
             </div>
 
