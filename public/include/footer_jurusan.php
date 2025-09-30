@@ -85,7 +85,7 @@
 
 <div class="footer">
   <div class="footer-left">
-    <img src="assets/image/logo_smk.png" alt="Logo SMK">
+    <img src="../../assets/image/logo_smk.png" alt="Logo SMK">
     <div class="footer-text">
       <div class="school-name">SMK NEGERI 1</div>
       <div class="school-subtitle">Bintan Utara</div>
@@ -98,8 +98,8 @@
   </div>
 
   <div class="footer-right">
-    <a href="#"><img src="assets/image/Youtube.png" alt="YouTube"></a>
-    <a href="#"><img src="assets/image/Facebook_icon.png" alt="Facebook"></a>
-    <a href="#"><img src="assets/image/ig_logo.png" alt="Instagram"></a>
+    <a href="#"><img src="../../assets/image/Youtube.png" alt="YouTube"></a>
+    <a href="#"><img src="../../assets/image/Facebook_icon.png" alt="Facebook"></a>
+    <a href="#"><img src="../../assets/image/ig_logo.png" alt="Instagram"></a>
   </div>
 </div>

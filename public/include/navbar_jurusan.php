@@ -164,58 +164,51 @@ body {
 }
 </style>
 
-<div class="navbar">
-    <div class="brand">
-        <img src="assets/image/logo_smk.png" alt="Logo SMK" />
-        <div class="brand-text">
-            <div class="title">SMK NEGERI 1</div>
-            <div class="subtitle">Bintan Utara</div>
-        </div>
-    </div>
-    <div class="nav-links">
-        <a href="index.php">BERANDA</a>
-
-        <div class="dropdown">
-            <a href="#">TENTANG ▾</a>
-            <div class="dropdown-content">
-                <a href="profil.php">Profile Sekolah</a>
-                <a href="galeri.php">Galeri</a>
-                <a href="ekstrakurikuler.php">Ekstrakulikuler</a>
-                <a href="gurudantendik.php">Guru Dan Tendik</a>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="brand">
+            <img src="assets/image/logo_smk.png" alt="Logo SMK" />
+            <div class="brand-text">
+                <div class="title">SMK NEGERI 1</div>
+                <div class="subtitle">Bintan Utara</div>
             </div>
         </div>
+        <div class="nav-links">
+            <a href="../../index.php">BERANDA</a>
 
-        <div class="dropdown">
-            <a href="../jurusan/jurusan.php">JURUSAN ▾</a>
-            <div class="dropdown-content">
-                <a href="jurusan/RPL/rpl.php">Rekayasa Perangkat Lunak</a>
-                <a href="jurusan/PH/ph.php">Perhotelan</a>
-                <a href="jurusan/TEI/tei.php">Teknik Jaringan Komputer</a>
-                <a href="jurusan/TITL/titl.php">Teknik Elektronika Industri</a>
-                <a href="jurusan/TKDP/tkdp.php">Teknik Instalasi Tenaga Listrik</a>
-                <a href="jurusan/TKJ/tkj.php">Teknik Kendaraan Ringan</a>
-                <a href="jurusan/TKR/tkr.php">Teknik Pengelasan</a>
-                <a href="jurusan/TP/tp.php">Teknik Konstruksi Dan Pembangunan</a>
+            <div class="dropdown">
+                <a href="#">TENTANG ▾</a>
+                <div class="dropdown-content">
+                    <a href="../../../public/profil.php">Profile Sekolah</a>
+                    <a href="../../../public/galeri.php">Galeri</a>
+                    <a href="../../../public/ekstrakurikuler.php">Ekstrakulikuler</a>
+                    <a href="../../../public/gurudantendik.php">Guru Dan Tendik</a>
+                </div>
             </div>
-        </div>
 
-        <div class="dropdown">
-            <a href="#">INFORMASI ▾</a>
-            <div class="dropdown-content">
-                <a href="#">Agenda</a>
-                <a href="#">Pengumuman</a>
-                <a href="#">Kegiatan</a>
+            <div class="dropdown">
+                <a href="../jurusan/jurusan.php">JURUSAN ▾</a>
+                <div class="dropdown-content">
+                    <a href="../RPL/rpl.php">Rekayasa Perangkat Lunak</a>
+                    <a href="../PH/ph.php">Perhotelan</a>
+                    <a href="..//TEI/tei.php">Teknik Jaringan Komputer</a>
+                    <a href="..//TITL/titl.php">Teknik Elektronika Industri</a>
+                    <a href="../TKDP/tkdp.php">Teknik Instalasi Tenaga Listrik</a>
+                    <a href="../TKJ/tkj.php">Teknik Kendaraan Ringan</a>
+                    <a href="../TKR/tkr.php">Teknik Pengelasan</a>
+                    <a href="../TP/tp.php">Teknik Konstruksi Dan Pembangunan</a>
+                </div>
             </div>
+
+            <div class="dropdown">
+                <a href="#">INFORMASI ▾</a>
+                <div class="dropdown-content">
+                    <a href="#">Agenda</a>
+                    <a href="#">Pengumuman</a>
+                    <a href="#">Kegiatan</a>
+                </div>
+            </div>
+
+            <a href="#berita">BERITA</a>
+            <a href="#">PPDBB</a>
         </div>
-
-        <a href="#berita">BERITA</a>
-        <a href="#">PPDBB</a>
-    </div>
-</div>
-
-<script>
-window.addEventListener("scroll", function() {
-    const navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("scrolled", window.scrollY > 50);
-});
-</script>
