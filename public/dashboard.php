@@ -88,16 +88,32 @@ include 'include/check_login.php';
     </div>
 
     <!-- Recent Activity -->
+    <?php
+    include '../config/config.php';
+    $query = "SELECT a.*, u.username 
+          FROM activity_log a
+          JOIN users u ON a.user_id = u.id
+          ORDER BY a.created_at DESC
+          LIMIT 5";
+    $result = $conn->query($query);
+    ?>
+
     <div class="card mb-4">
       <div class="card-header bg-white">
         <h5 class="mb-0">Aktivitas Terbaru</h5>
       </div>
       <div class="card-body">
         <ul class="list-group">
-          <li class="list-group-item">Admin menambahkan berita baru</li>
-          <li class="list-group-item">Guru Budi memperbarui data agenda</li>
-          <li class="list-group-item">Pengumuman ujian semester diposting</li>
-          <li class="list-group-item">Foto kegiatan pramuka ditambahkan</li>
+          <?php while ($row = $result->fetch_assoc()): ?>
+            <li class="list-group-item">
+              <strong><?= htmlspecialchars($row['username']) ?></strong>
+              melakukan <em><?= htmlspecialchars($row['action']) ?></em>
+              pada tabel <b><?= htmlspecialchars($row['table_name']) ?></b>
+              (ID: <?= $row['record_id'] ?>) -
+              <?= htmlspecialchars($row['description']) ?>
+              <small class="text-muted float-end"><?= $row['created_at'] ?></small>
+            </li>
+          <?php endwhile; ?>
         </ul>
       </div>
     </div>
@@ -107,13 +123,17 @@ include 'include/check_login.php';
       <div class="col-md-4">
         <div class="card text-center p-4">
           <i class="fa fa-plus-circle fa-2x mb-3 text-primary"></i>
-          <a href="../public/dashboard/berita.php" class="text-decoration-none text-dark"><h6>Tambah Berita</h6></a>
+          <a href="../public/dashboard/berita.php" class="text-decoration-none text-dark">
+            <h6>Tambah Berita</h6>
+          </a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card text-center p-4">
           <i class="fa-solid fa-image fa-2x mb-3 text-success"></i>
-          <a href="../public/dashboard/gallery.php" class="text-decoration-none text-dark"><h6>Tambah Gallery</h6></a>
+          <a href="../public/dashboard/gallery.php" class="text-decoration-none text-dark">
+            <h6>Tambah Gallery</h6>
+          </a>
         </div>
       </div>
       <div class="col-md-4">

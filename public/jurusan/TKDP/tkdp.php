@@ -49,6 +49,7 @@
             <a href="#">PPDBB</a>
         </div>
     </div>
+    
     <section class="hero">
         <div class="hero-content">
             <h1 class="floating">Rekayasa Perangkat Lunak</h1>

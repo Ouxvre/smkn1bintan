@@ -53,16 +53,16 @@
                 <div class="dropdown-content">
                     <a href="jurusan/RPL/rpl.php">Rekayasa Perangkat Lunak</a>
                     <a href="jurusan/PH/ph.php">Perhotelan</a>
-                    <a href="jurusan/TEI/tei.php">Teknik Jaringan Komputer</a>
-                    <a href="jurusan/TITL/titl.php">Teknik Elektronika Industri</a>
-                    <a href="jurusan/TKDP/tkdp.php">Teknik Instalasi Tenaga Listrik</a>
-                    <a href="jurusan/TKJ/tkj.php">Teknik Kendaraan Ringan</a>
-                    <a href="jurusan/TKR/tkr.php">Teknik Pengelasan</a>
-                    <a href="jurusan/TP/tp.php">Teknik Konstruksi Dan Pembangunan</a>
+                    <a href="jurusan/TKJ/tkj.php">Teknik Jaringan Komputer</a>
+                    <a href="jurusan/TEI/tei.php">Teknik Elektronika Industri</a>
+                    <a href="jurusan/TITL/titl.php">Teknik Instalasi Tenaga Listrik</a>
+                    <a href="jurusan/TKR/tkr.php">Teknik Kendaraan Ringan</a>
+                    <a href="jurusan/TP/tp.php">Teknik Pengelasan</a>
+                    <a href="jurusan/TKDP/tkdp.php">Teknik Konstruksi Dan Pembangunan</a>
                 </div>
             </div>
 
-            <a href="#berita">BERITA</a>
+            <a href="berita">BERITA</a>
             <a href="#">PPDBB</a>
         </div>
     </div>
@@ -219,7 +219,7 @@
                 <p>Siswa Aktif</p>
             </div>
             <div class="stat-box">
-                <h2>7+</h2>
+                <h2>20+</h2>
                 <p>Guru Aktif</p>
             </div>
             <div class="stat-box">
