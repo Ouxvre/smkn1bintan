@@ -29,16 +29,6 @@ if (isset($_POST['simpan'])) {
 
     if (empty($alertMsg)) {
         if ($conn->query($sql) === TRUE) {
-              $last_id = $conn->insert_id;
-  
-        addLog(
-            $conn,
-            $_SESSION['user_id'],    
-            'create',             
-            'berita',                 
-            $last_id,                 
-            "Menambahkan berita baru dengan judul: $judul"
-        );
 
             header("Location: ../../public/dashboard/berita.php");
             exit;
