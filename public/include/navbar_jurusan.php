@@ -200,15 +200,6 @@ body {
                 </div>
             </div>
 
-            <div class="dropdown">
-                <a href="#">INFORMASI ▾</a>
-                <div class="dropdown-content">
-                    <a href="#">Agenda</a>
-                    <a href="#">Pengumuman</a>
-                    <a href="#">Kegiatan</a>
-                </div>
-            </div>
-
             <a href="#berita">BERITA</a>
             <a href="#">PPDBB</a>
         </div>

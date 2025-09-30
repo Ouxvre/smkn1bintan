@@ -23,7 +23,7 @@ include 'include/check_login.php';
     <a href="../public/dashboard/users.php"><i class="fa fa-users"></i> Users</a>
     <a href="../public/dashboard/berita.php"><i class="fa fa-newspaper"></i> Berita</a>
     <a href="../public/dashboard/gallery.php"><i class="fa-solid fa-images"></i> Gallery</a>
-    <a href="../public/dashboard/ekstrakurikuler.php"><i class="fa-solid fa-images"></i> Ekstrakurikuler</a>
+    <a href="../public/dashboard/ekstrakurikuler.php"><i class="fa fa-school"></i> Ekstrakurikuler</a>
     <a href="../public/dashboard/staff.php"><i class="fa fa-user-tie"></i> Staff</a>
     <a href="#"><i class="fa fa-cogs"></i> Settings</a>
     <a href="/smkn1bintan/auth/logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
@@ -113,13 +113,13 @@ include 'include/check_login.php';
       <div class="col-md-4">
         <div class="card text-center p-4">
           <i class="fa-solid fa-image fa-2x mb-3 text-success"></i>
-          <a href="../public/dashboard/gallery.php" class="text-decoration-none text-dark"><h6>Uploud Gallery</h6></a>
+          <a href="../public/dashboard/gallery.php" class="text-decoration-none text-dark"><h6>Tambah Gallery</h6></a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card text-center p-4">
-          <i class="fa fa-file-upload fa-2x mb-3 text-warning"></i>
-          <h6>Upload Dokumen</h6>
+          <i class="fa-solid fa-image fa-2x mb-3 text-warning"></i>
+          <h6>Tambah Ekstrakurikuler</h6>
         </div>
       </div>
     </div>

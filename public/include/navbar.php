@@ -197,16 +197,7 @@ body {
                 <a href="jurusan/TKR/tkr.php">Teknik Pengelasan</a>
                 <a href="jurusan/TP/tp.php">Teknik Konstruksi Dan Pembangunan</a>
             </div>
-        </div>
-
-        <div class="dropdown">
-            <a href="#">INFORMASI ▾</a>
-            <div class="dropdown-content">
-                <a href="#">Agenda</a>
-                <a href="#">Pengumuman</a>
-                <a href="#">Kegiatan</a>
-            </div>
-        </div>
+        </div>  
 
         <a href="#berita">BERITA</a>
         <a href="#">PPDBB</a>

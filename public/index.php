@@ -62,15 +62,6 @@
                 </div>
             </div>
 
-            <div class="dropdown">
-                <a href="#">INFORMASI ▾</a>
-                <div class="dropdown-content">
-                    <a href="#">Agenda</a>
-                    <a href="#">Pengumuman</a>
-                    <a href="#">Kegiatan</a>
-                </div>
-            </div>
-
             <a href="#berita">BERITA</a>
             <a href="#">PPDBB</a>
         </div>
@@ -112,7 +103,7 @@
                 <img src="assets/image/kepsek.jpg" alt="Kepala Sekolah" />
             </div>
             <div class="sambutan-text" data-aos="fade-left">
-                <h3>Broery Jandriano Pratama M.Pd</h3>
+                <h3>Nuraisah</h3>
                 <p>
                     <span> Bismillahirrahmanirrahim .. Assalamu’alaikum</span>
                     warahmatullahi wabarakatuh , puji syukur kami panjatkan kehadirat
@@ -139,7 +130,7 @@
         <div class="card-bagan" data-aos="fade-up" data-aos-delay="200">
             <i class="fas fa-users"></i>
             <h3>Organisasi & Ekstrakulikuler</h3>
-            <a href="organisasi.html" class="btn">Load More</a>
+            <a href="ekstrakurikuler.php" class="btn">Load More</a>
         </div>
 
         <div class="card-bagan" data-aos="fade-up" data-aos-delay="400">
